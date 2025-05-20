@@ -1,0 +1,12 @@
+import React from 'react';
+
+import { SectionTitle2 } from '../../common/sectionTitle2';
+
+export const Join = () => {
+    return (
+        <div className='flex flex-col justify-between items-center container mx-auto px-[130px] py-[40px]'>
+            <SectionTitle2 type={3} />
+            <a href="#" className='btn btn-large'><span>Join Community</span></a>
+        </div>
+    )
+}
