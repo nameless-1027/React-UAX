@@ -4,14 +4,14 @@ import { SectionTitle1 } from '../../common/sectionTitle1';
 export const Offering = () => {
 
     return (
-        <div className='flex flex-col justify-between items-center container mx-auto px-[130px] py-[40px]'>
-            <div className='w-full flex justify-between items-center'>
+        <div className='flex flex-col justify-between items-center container mx-auto xl:px-[130px] px-[16px] py-[40px]'>
+            <div className='w-full flex flex-wrap justify-between items-center'>
                 <SectionTitle1 type={2} />
             </div>
-            <div className='w-full flex justify-between items-center pt-[40px] offering flex-wrap'>
-                <div className='flex w-[50%] px-[10px]'>
-                    <div className ="document-box">
-                        <a href="#" className ="title">
+            <div className='w-full flex justify-between items-center sm:pt-[40px] pt-[20px] offering flex-wrap'>
+                <div className='flex lg:w-[50%] w-full px-[10px]'>
+                    <div className="document-box">
+                        <a href="#" className="title">
                             <img
                                 src="https://images.uaxdlts.com/uax-landing/assets/images/icon/uaxwallet.png"
                                 style={{ width: "20px", marginRight: "10px" }}
@@ -26,7 +26,7 @@ export const Offering = () => {
                                     </p>
                                 </div>
                                 <div className="group-button">
-                                    <a href="#" className ="btn">
+                                    <a href="#" className="btn">
                                         Explore
                                         <i className="fa fa-long-arrow-right ml-[4px]" aria-hidden="true">
                                         </i>
@@ -44,9 +44,9 @@ export const Offering = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex w-[50%] px-[10px]'>
-                    <div className ="document-box">
-                        <a href="#" className ="title">
+                <div className='flex lg:w-[50%] w-full px-[10px]'>
+                    <div className="document-box">
+                        <a href="#" className="title">
                             <img
                                 src="https://images.uaxdlts.com/uax-landing/assets/images/icon/uaxscan.png"
                                 style={{ width: "20px", marginRight: "10px" }}
@@ -61,7 +61,7 @@ export const Offering = () => {
                                     </p>
                                 </div>
                                 <div className="group-button">
-                                    <a href="#" className ="btn">
+                                    <a href="#" className="btn">
                                         Explore
                                         <i className="fa fa-long-arrow-right ml-[4px]" aria-hidden="true">
                                         </i>
@@ -79,9 +79,9 @@ export const Offering = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex w-[50%] px-[10px]'>
-                    <div className ="document-box">
-                        <a href="#" className ="title">
+                <div className='flex lg:w-[50%] w-full px-[10px]'>
+                    <div className="document-box">
+                        <a href="#" className="title">
                             <img
                                 src="https://images.uaxdlts.com/uax-landing/assets/images/icon/uaxbridge.png"
                                 style={{ width: "20px", marginRight: "10px" }}
@@ -97,7 +97,7 @@ export const Offering = () => {
                                     </p>
                                 </div>
                                 <div className="group-button">
-                                    <a href="#" className ="btn">
+                                    <a href="#" className="btn">
                                         Explore
                                         <i className="fa fa-long-arrow-right ml-[4px]" aria-hidden="true">
                                         </i>
@@ -115,9 +115,9 @@ export const Offering = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex w-[50%] px-[10px]'>
-                    <div className ="document-box">
-                        <a href="#" className ="title">
+                <div className='flex lg:w-[50%] w-full px-[10px]'>
+                    <div className="document-box">
+                        <a href="#" className="title">
                             <img
                                 src="https://images.uaxdlts.com/uax-landing/assets/images/icon/uaxnft.png"
                                 style={{ width: "20px", marginRight: "10px" }}
@@ -132,7 +132,7 @@ export const Offering = () => {
                                     </p>
                                 </div>
                                 <div className="group-button">
-                                    <a href="#" className ="btn">
+                                    <a href="#" className="btn">
                                         Explore
                                         <i className="fa fa-long-arrow-right ml-[4px]" aria-hidden="true">
                                         </i>

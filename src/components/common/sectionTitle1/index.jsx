@@ -14,12 +14,13 @@ const datas = [
             <br />
             <span className='text-white'>on browsers</span>&nbsp;designed for privacy.
         </p>
-    }, {
+    },
+    {
         image: "media/lines/core2.svg",
         title: <h1> <span className='text-[#7D4689]'>Core</span><br />
             Offerings of<br /><span className='text-[#CE1FEA]'>UAX.Network</span>
         </h1>,
-        content: <p className='text-[20px]'>
+        content: <p className='md:text-[20px] text-[14px] md:ml-[10px] ml-[30px]'>
             Drives Web3 innovation: providing secure wallets,
             real-time monitoring, seamless cross-chain connectivity, and NFTs.
         </p>
@@ -44,18 +45,22 @@ const datas = [
 export const SectionTitle1 = ({ type }) => {
     return (
         <>
-            <div className='w-[50%] flex items-center px-[15px]'>
-                <img src={datas[type - 1].image} alt="core1" className='mr-[40px]' style={{ width: "14px", height: "180px" }} />
+            <div className='md:w-[50%] w-full flex items-center px-[16px]'>
+                <img
+                    src={datas[type - 1].image}
+                    alt="core1"
+                    className='md:mr-[40px] mr-[20px] md:w-[14px] w-[10px] md:h-[180px] h-[100px]'
+                />
                 {
                     datas[type - 1].title
                 }
             </div>
-            <div className='w-[50%] flex flex-col items-end justify-center px-[15px]'>
+            <div className='md:w-[50%] w-full flex flex-col items-end justify-center px-[16px]'>
                 <div>
                     {
                         type === 3 ?
                             <h6 className='text-[20px] text-white font-bold'>Deflationary Mechanisms:</h6>
-                            : <img src="media/lines/build.svg" alt="build" />
+                            : <img src="media/lines/build.svg" className='md:block hidden' alt="build" />
                     }
                     {
                         datas[type - 1].content

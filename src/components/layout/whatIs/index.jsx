@@ -4,49 +4,49 @@ import { SectionTitle2 } from '../../common/sectionTitle2';
 
 export const WhatIs = () => {
     return (
-        <div className='flex flex-col container mx-auto px-[38px] py-[15px] what-is'>
+        <div className='flex flex-col container mx-auto sm:px-[38px] px-[16px] py-[15px] what-is'>
             <SectionTitle2 type={1} />
-            <div className='flex justify-between boxes px-[80px]'>
-                <div className='w-[33.33%] box'>
+            <div className='flex flex-wrap justify-between boxes px-[16px] lg:px-[80px]'>
+                <div className='md:w-[33.33%] w-full box'>
                     <div>
                         <div className='box-title'>
-                            <h3 className='text-center'>
+                            <h3 className='text-center md:text-[18px] '>
                                 Tokenizing NFTs with Real
                                 World Applications
                             </h3>
                         </div>
                         <div className='box-content'>
-                            <p className='text-[14px] text-center'>
+                            <p className='text-[14px] text-center md:block hidden'>
                                 Physical Asset Tokenization.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className='w-[33.33%] box'>
+                <div className='md:w-[33.33%] w-full box'>
                     <div>
                         <div className='box-title'>
-                            <h3 className='text-center'>
+                            <h3 className='text-center md:text-[18px] '>
                                 Tokenizing NFTs with Real
                                 World Applications
                             </h3>
                         </div>
                         <div className='box-content'>
-                            <p className='text-[14px] text-center'>
+                            <p className='text-[14px] text-center md:block hidden'>
                                 Physical Asset Tokenization.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className='w-[33.33%] box'>
+                <div className='md:w-[33.33%] w-full box'>
                     <div>
                         <div className='box-title'>
-                            <h3 className='text-center'>
+                            <h3 className='text-center md:text-[18px] text-[20px]'>
                                 Tokenizing NFTs with Real
                                 World Applications
                             </h3>
                         </div>
                         <div className='box-content'>
-                            <p className='text-[14px] text-center'>
+                            <p className='text-[14px] text-center md:block hidden'>
                                 Physical Asset Tokenization.
                             </p>
                         </div>

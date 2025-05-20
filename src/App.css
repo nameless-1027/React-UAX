@@ -26,7 +26,7 @@ a.btn {
   color: #fff;
   font-size: 16px;
   line-height: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   display: flex;
 }
 
@@ -42,14 +42,28 @@ a.btn span {
   color: #fff;
   font-size: 16px;
   line-height: 16px !important;
+}
+
+a.btn-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 100%;
   letter-spacing: 1px;
+}
+
+a.btn-mobile.btn-ghost {
+  background: transparent !important;
+  border: 1px solid #D90EFA;
 }
 
 p {
   margin: 12px 0 16px;
   color: #BABABA;
-  letter-spacing: 0.5px;
+  letter-spacing: 0;
   line-height: 1.73;
+  font-weight: 400;
 }
 
 h1 {
@@ -85,10 +99,6 @@ nav li:hover .sub-menu {
   display: block;
 }
 
-nav li:hover .sub-menu li:hover {
-  border-color: #D90EFA;
-}
-
 i:before {
   font-size: 10px;
 }
@@ -97,13 +107,126 @@ header {
   backdrop-filter: blur(5px);
 }
 
+header .line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #D90EFA;
+}
+
+header .mobile-button {
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 30px;
+}
+
+header .mobile-button span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 50%;
+  overflow: hidden;
+  text-indent: 200%;
+}
+
+header .mobile-button::before,
+header .mobile-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+header .mobile-button span,
+header .mobile-button::before,
+header .mobile-button::after {
+  background-color: #ffffff;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+header .mobile-button#active span {
+  display: none;
+}
+
+header .mobile-button#active::before {
+  transform: rotate(45deg);
+}
+
+header .mobile-button#active::after {
+  transform: rotate(-45deg);
+}
+
+header .mobile-button::before {
+  transform: translate3d(0, -7px, 0);
+}
+
+header .mobile-button::after {
+  transform: translate3d(0, 7px, 0);
+}
+
+header .main-nav {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999999;
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  height: 100vh;
+  overflow: auto;
+}
+
+header .main-nav ul {
+  background-color: #1e1e1e;
+  padding: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .main-nav ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+header .main-nav ul li a {
+  color: rgb(255, 255, 255);
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+header .icon-arrow {
+  transition: all 0.3s ease;
+}
+
+header .icon-arrow#active {
+  transform: rotate(180deg);
+}
 
 .banner {
   background-image: url('./assets/media/main-image/first-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 200px 16px 80px;
+  padding: 200px 32px 80px;
 }
 
 .banner h2.title {
@@ -159,6 +282,7 @@ h5 {
   padding: 29px 30px 27px;
   border: 1px solid #FFFFFF24;
   border-radius: 6px;
+  margin: 18px 0;
 }
 
 .globe .box-title {
@@ -458,6 +582,53 @@ h5 {
   color: #FFFFFF;
 }
 
+.chat-label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.chat-label.presale {
+  left: 0;
+  top: 36%;
+}
+
+.chat-label.airdrops {
+  left: 8%;
+  bottom: 12%;
+}
+
+.chat-label.marketing {
+  right: 25%;
+  top: 120px;
+}
+
+.chat-label.rewards {
+  right: 0%;
+  top: 36%;
+}
+
+.chat-label.dev-team {
+  right: 0%;
+  bottom: 25%;
+}
+
+.chat-label.legal {
+  right: 13%;
+  bottom: 12%;
+}
+
+.chat-label h1,
+.chat-label p {
+  font-size: 12px;
+}
+
+.chat-label p {
+  font-weight: 300;
+  color: #FFFFFFCC;
+}
 
 .flat-toggle {
   background: rgba(255, 255, 255, 0.04);
@@ -466,6 +637,7 @@ h5 {
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   cursor: pointer;
+  overflow: hidden;
 }
 
 .flat-toggle .toggle-title {
@@ -484,7 +656,7 @@ h5 {
   font-size: 15px;
   margin-bottom: 0;
   padding-right: 10px;
-  display: none;
+  /* display: none; */
   color: #FFFFFF;
 }
 
@@ -534,7 +706,7 @@ h5 {
   font-size: 14px;
 }
 
-.footer #join-btn {
+.footer .join-btn {
   padding: 12px 14px;
   position: absolute;
   bottom: 6%;
@@ -553,7 +725,6 @@ h5 {
   margin-right: 6px;
   margin-left: 6px;
   z-index: 9;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -589,5 +760,136 @@ h5 {
   to {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .network #network {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #network .box {
+    width: 250px;
+  }
+
+  .network #network {
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .what-is .box-title h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .what-is .box>div {
+    padding: 14px 70px;
+  }
+
+  .what-is .box,
+  .what-is .box:nth-child(2) {
+    padding: 4px 0;
+  }
+
+  .what-is .boxes {
+    margin: 40px 0 35px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  #join-btn {
+    border-radius: 30px;
+    padding: 14px 18px;
+  }
+
+  .footer {
+    /* background-color: #161718; */
+    width: 100%;
+  }
+
+  .footer h6 {
+    font-size: 16px;
+  }
+
+  .footer .join-btn {
+    padding: 8px 14px;
+  }
+
+  .footer input {
+    padding:9px 25px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .banner h2.title {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  p {
+    font-size: 12px;
+    margin: 8px 10px;
+  }
+
+  .what-is .boxes {
+    margin: 30px 0 25px;
+  }
+
+  .usecase .menu-tab {
+    margin-bottom: 40px;
+  }
+
+  .chat-label {
+    display: block;
+  }
+
+  .flat-toggle .toggle-title {
+    font-size: 18px;
+  }
+
+  .flat-toggle .toggle-content {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .globe .box {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .what-is .box-title h3 {
+    font-size: 12px;
+  }
+
+
+  .offering .document-box .content .content-detail p {
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+
+  .offering .document-box .content .content-detail a.btn {
+    padding: 11px 20px;
+  }
+
+  .chat-label.rewards,
+  .chat-label.presale {
+    top: 39%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .offering .document-box {
+    padding: 34px 0 0 54px;
+  }
+
+  .offering .document-box .title {
+    margin-left: -22px;
   }
 }

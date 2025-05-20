@@ -2,8 +2,8 @@ import React from 'react';
 
 export const Network = () => {
     return (
-        <div className='container mx-auto w-full pt-[60px] pb-[40px] network'>
-            <h1 className='text-[45px] font-bold text-center leading-[46px] mt-[36px] mb-[16px]'>
+        <div className='container mx-auto w-full pt-[60px] pb-[40px] network sm:block hidden'>
+            <h1 className='md:text-[45px] text-[32px] font-bold text-center leading-[46px] mt-[36px] mb-[16px]'>
                 What's
                 <span className='text-[#7D4689]'> New On </span><span className='text-[#CE1FEA]'>
                     Uaxnetwork</span>
@@ -39,9 +39,9 @@ export const Network = () => {
                         </div>
                     </div>
                 </div>
-                <div class="box box-right">
-                    <div class="box-inner">
-                        <div class="detail">
+                <div className="box box-right">
+                    <div className="box-inner">
+                        <div className="detail">
                             <div className="title">
                                 <h6 className='text-[18px]'>Decentralized Applications (Dapps) On UAX.NETWORK</h6>
                             </div>
@@ -54,7 +54,7 @@ export const Network = () => {
                         </div>
                     </div>
                 </div>
-                <div class="box box-bottom">
+                <div className="box box-bottom">
                     <div className="box-inner">
                         <div className="detail">
                             <div className="title">

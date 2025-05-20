@@ -39,8 +39,8 @@ export const Usecase = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     return (
-        <div className='flex flex-col container mx-auto px-[130px] pt-[40px] pb-[160px] usecase'>
-            <h1 className='text-center text-[45px] font-bold mt-[40px] mb-[16px]'>
+        <div className='flex flex-col container mx-auto sm:px-[130px] px-[48px] sm:pt-[40px] pt-[20px] md:pb-[160px] pb-[60px] usecase'>
+            <h1 className='text-center sm:text-[45px] text-[32px] font-bold sm:mt-[40px] mt-[20px] sm:mb-[16px] mb-[10px]'>
                 <span className='text-[#CE1FEA]'>Uaxnetwork </span>
                 Usecases
             </h1>
