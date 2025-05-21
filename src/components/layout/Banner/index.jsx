@@ -4,9 +4,9 @@ export const Banner = () => {
     return (
         <div className='banner w-full'>
             <div
-                className='container mx-auto px-[12px] flex justify-between items-center xl:max-w-[1440px]'
+                className='container mx-auto sm:px-[12px] px-[18px] flex justify-between items-center '
             >
-                <div className="flex flex-col justify-start md:items-start items-center xl:px-[80px] w-full h-full">
+                <div className="flex flex-col justify-start md:items-start items-center xl:sm:px-[80px] px-0 w-full h-full">
                     <h2 className="title text-center md:text-start">
                         base-layer blockchain <br /><span>Scalable, secure, efficient</span>
                     </h2>

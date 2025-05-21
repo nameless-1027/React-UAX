@@ -1,12 +1,46 @@
+@media screen and (min-width: 1024px) {
+    header .main-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width : 1280px) {
+    .road-map .road-map-main {
+        padding: 0 171px;
+    }
+}
+
+@media screen and (min-width : 1440px) {
+    .container {
+        max-width: 1440px !important;
+    }
+
+    .road-map .road-map-main {
+        padding: 0 251px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .allow .numbers {
+        padding: 51px 80px 0 90px;
+    }
+}
+
 @media screen and (max-width: 1280px) {
     .network #network {
         padding: 0 32px;
     }
-}
 
-@media screen and (min-width: 1024px) {
-    header .main-nav {
-        display: none;
+    .road-map .road-map-main {
+        padding: 0 93px;
+    }
+
+    .allow .numbers {
+        padding: 51px 0;
+    }
+
+    .road-map .road-map-main .box-roadmap {
+        width: 280px;
     }
 }
 
@@ -15,9 +49,61 @@
         width: 250px;
     }
 
+    .road-map .road-map-main .box-roadmap.left::after {
+        right: -111px;
+    }
+
+    .road-map .road-map-main .box-roadmap.right::after {
+        left: -111px;
+    }
+
+    .road-map .road-map-main .box-roadmap.left::before {
+        right: -78px;
+    }
+
+    .road-map .road-map-main .box-roadmap.right::before {
+        left: -78px;
+    }
+
     .network #network {
         height: 750px;
     }
+
+    .road-map .road-map-main {
+        padding: 0 35px;
+    }
+
+    .road-map .road-map-main .box-roadmap {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width:875px) {
+
+
+    .road-map .road-map-main .box-roadmap::before,
+    .road-map .road-map-main .box-roadmap::after {
+        display: none;
+    }
+
+    .road-map .road-map-main .box-roadmap.left,
+    .road-map .road-map-main .box-roadmap.right {
+        margin: 0 0 30px;
+    }
+
+    .road-map .road-map-main {
+        justify-content: flex-start;
+    }
+
+    .road-map .road-map-main {
+        gap: 12px;
+    }
+
+    .road-map .road-map-main::before,
+    .road-map .road-map-main::after {
+        left: 100%;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -63,10 +149,17 @@
 
     .footer input {
         padding: 9px 25px;
+        border-radius: 6px;
     }
 }
 
 @media screen and (max-width: 640px) {
+
+
+    .container {
+        max-width: 540px;
+    }
+
     .banner h2.title {
         font-size: 20px;
         line-height: 32px;
@@ -96,6 +189,10 @@
     .flat-toggle .toggle-content {
         font-size: 13px;
     }
+
+    .road-map .road-map-main {
+        padding: 0 6px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -121,6 +218,10 @@
     .chat-label.rewards,
     .chat-label.presale {
         top: 39%;
+    }
+
+    .road-map .road-map-main .box-roadmap {
+        width: 80%;
     }
 }
 

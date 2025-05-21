@@ -112,16 +112,19 @@
 .road-map .road-map-main::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 2px;
     height: 100%;
     border-left: 2px dashed #ce20ea;
-    margin-left: auto;
-    margin-right: auto;
-    left: -14px;
-    right: 0;
-    text-align: center;
+    left: calc(50% - 1px);
+}
+
+.road-map .road-map-main::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 27%;
+    background: #ce20ea;
+    left: calc(50% - 2px);
 }
 
 .road-map .road-map-main .box-roadmap {
@@ -142,7 +145,7 @@
     letter-spacing: 0;
     text-transform: uppercase;
     color: var(--content-color);
-    margin-bottom: 5px;
+    margin: 0 0 5px;
 }
 
 .road-map .road-map-main .box-roadmap .title {
@@ -152,10 +155,16 @@
     color: var(--text-color);
     font-size: 22px;
     text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: -1px;
 }
 
 .road-map .road-map-main .box-roadmap .list {
     margin-top: 18px;
+    letter-spacing: -1px;
+    line-height: 1.73;
+    font-weight: 400;
 }
 
 .road-map .road-map-main .box-roadmap .list li {
@@ -170,7 +179,7 @@
     height: 5px;
     border-radius: 50%;
     background: var(--text-color);
-    margin: 0 10px;
+    margin: 0 8px;
 }
 
 .road-map .road-map-main .box-roadmap .list li p {
@@ -226,11 +235,11 @@
 
 .road-map .road-map-main .box-roadmap.left::after {
     left: auto;
-    right: -142px;
+    right: -141px;
 }
 
 .road-map .road-map-main .box-roadmap.right::after {
-    left: -156px;
+    left: -141px;
 }
 
 .road-map .road-map-main .box-roadmap.left::before {

@@ -3,18 +3,18 @@ import React from "react";
 export const Allow = () => {
     return (
         <div className="w-full pt-[150px] pb-[80px]">
-            <div className="container mx-auto px-[12px] max-w-[1440px]">
-                <div className="px-[80px] mx-[-12px] flex allow">
-                    <div className="w-[50%] flex flex-col px-[15px]">
+            <div className="container mx-auto sm:px-[12px] px-[18px] ">
+                <div className="sm:px-[80px] px-0 mx-[-12px] flex xl:flex-row flex-col allow">
+                    <div className="xl:w-[50%] w-full flex flex-col px-[15px]">
                         <h1 className="title">Allow Us To Introduce Ourselves</h1>
                         <p className="text-[20px] content my-0">ICOLand is a collection of 10,000 Bored
                             Ape NFTs unique digital collectibles living on the Ethereum blockchain.</p>
-                        <div className="flex items-center mt-[57px] items">
+                        <div className="flex md:items-center items-start mt-[57px] items md:flex-row flex-col gap-[30px] md:gap-0">
                             <img src="media/allow/item-01.jpg" alt="item-01" />
                             <img src="media/allow/item-02.jpg" alt="item-02" />
                         </div>
                     </div>
-                    <div className="w-[50%] px-[15px]">
+                    <div className="xl:w-[50%] w-full px-[15px]">
                         <div className="w-full flex flex-col numbers">
                             <div className="flex justify-start items-center number">
                                 <div className="number-item">

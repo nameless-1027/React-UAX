@@ -13,11 +13,11 @@ export const RoadmapMail = () => {
 
     return (
         <div className='w-full road-map'>
-            <div className="container mx-auto px-[12px] max-w-[1440px]">
+            <div className="container mx-auto sm:px-[12px] px-[18px] ">
                 <div className='w-full flex flex-col'>
                     <div className="block text-center">
                         <h3 className="heading text-[#CE1FEA]">Road map</h3>
-                        <p className="my-[16px] px-[350px] text-[17px]">The use of crypto-currencies has become more widespread, and they are
+                        <p className="my-[16px] xl:px-[350px] px-0 text-[17px]">The use of crypto-currencies has become more widespread, and they are
                             now increasingly accepted as a legitimate for transactions.</p>
                     </div>
                 </div>

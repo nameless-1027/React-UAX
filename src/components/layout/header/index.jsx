@@ -14,8 +14,8 @@ export const Header = () => {
 
     return (
         <header className='fixed top-0 left-0 flex justify-between items-center h-[80px] w-full z-10'>
-            <div className='container mx-auto px-[12px] flex justify-between items-center xl:max-w-[1440px]' >
-                <div className="flex items-center justify-between xl:px-[80px] w-full">
+            <div className='container mx-auto sm:px-[12px] px-[18px] flex justify-between items-center ' >
+                <div className="flex items-center justify-between xl:sm:px-[80px] px-0 w-full">
                     <img
                         src={`/media/logo/${theme}.png`}
                         alt="UAX Logo"
