@@ -1,0 +1,243 @@
+.allow .title {
+    font-family: "Oswald", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.allow .content {
+    letter-spacing: 0px;
+    font-weight: 300;
+}
+
+.allow .items img {
+    border-radius: 20px;
+}
+
+.allow .items img:nth-child(1) {
+    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 92% 100%, 100% 100%, 0 100%, 0% 100%, 0% 0);
+}
+
+.allow .items img:nth-child(2) {
+    clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0% 100%, 8% 0);
+}
+
+.allow .numbers {
+    padding: 51px 165px 0 13px;
+}
+
+.allow .numbers .number {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 56px;
+    position: relative;
+}
+
+.allow .numbers .number::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: auto;
+    bottom: -27px;
+    width: 100%;
+    height: 1px;
+    background: var(--border-color);
+}
+
+.allow .numbers .number-item {
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 28px;
+    border: 2px solid #e250e5;
+    background: #130F40;
+    background-clip: padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allow .numbers .number-item span {
+    margin: 0;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.allow .numbers .number h4 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 0;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.road-map {
+    background: url(../media/layout/rm-2.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 59px 0 43px;
+}
+
+.road-map .block .heading {
+    font-size: 40px;
+    font-family: "Poppins";
+    text-transform: none;
+}
+
+.road-map .block p {
+    color: var(--text-color);
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+.road-map .road-map-main {
+    margin-top: 58px;
+    padding: 0 243px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.road-map .road-map-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    border-left: 2px dashed #ce20ea;
+    margin-left: auto;
+    margin-right: auto;
+    left: -14px;
+    right: 0;
+    text-align: center;
+}
+
+.road-map .road-map-main .box-roadmap {
+    width: 330px;
+    background: rgba(46, 114, 210, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 26px 19px;
+    position: relative;
+    background-clip: padding-box;
+    border: 2px solid #ce20ea;
+    transition: 0.3s all ease-in-out;
+}
+
+.road-map .road-map-main .box-roadmap .time {
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: var(--content-color);
+    margin-bottom: 5px;
+}
+
+.road-map .road-map-main .box-roadmap .title {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--text-color);
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.road-map .road-map-main .box-roadmap .list {
+    margin-top: 18px;
+}
+
+.road-map .road-map-main .box-roadmap .list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: -2px;
+}
+
+.road-map .road-map-main .box-roadmap .list li .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--text-color);
+    margin: 0 10px;
+}
+
+.road-map .road-map-main .box-roadmap .list li p {
+    margin: 0;
+}
+
+.road-map .road-map-main .box-roadmap.left {
+    margin-bottom: 222px;
+}
+
+.road-map .road-map-main .box-roadmap.right {
+    margin-top: 202px;
+}
+
+.road-map .road-map-main .active,
+.road-map .road-map-main .box-roadmap:hover {
+    background: rgba(46, 114, 210, 0.3);
+}
+
+.road-map .road-map-main .box-roadmap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 50%;
+    width: 68px;
+    height: 2px;
+    background: #ce20ea;
+}
+
+.road-map .road-map-main .box-roadmap::after {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #ce20ea;
+    animation: 2s pulse-anim infinite;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    top: 43%;
+
+    webkit-animation-name: aoe;
+    animation-name: aoe;
+    -webkit-animation-duration: 1.6s;
+    animation-duration: 1.6s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    /* -webkit-animation-direction: alternate;
+    animation-direction: alternate; */
+}
+
+.road-map .road-map-main .box-roadmap.left::after {
+    left: auto;
+    right: -142px;
+}
+
+.road-map .road-map-main .box-roadmap.right::after {
+    left: -156px;
+}
+
+.road-map .road-map-main .box-roadmap.left::before {
+    left: auto;
+    right: -94px;
+}
+
+.road-map .road-map-main .box-roadmap.right::before {
+    left: -94px;
+}

@@ -11,7 +11,8 @@ import ScrollToTopButton from './components/common/scrollTop';
 import Theme from './components/common/theme';
 
 import './App.css';
-import './style.css';
+import './assets/styles/style.css';
+import './assets/styles/mobileView.css';
 
 function App() {
   return (

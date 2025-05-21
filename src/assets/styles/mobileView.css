@@ -1,0 +1,136 @@
+@media screen and (max-width: 1280px) {
+    .network #network {
+        padding: 0 32px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header .main-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #network .box {
+        width: 250px;
+    }
+
+    .network #network {
+        height: 750px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .what-is .box-title h3 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .what-is .box>div {
+        padding: 14px 70px;
+    }
+
+    .what-is .box,
+    .what-is .box:nth-child(2) {
+        padding: 4px 0;
+    }
+
+    .what-is .boxes {
+        margin: 40px 0 35px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    #join-btn {
+        border-radius: 30px;
+        padding: 14px 18px;
+    }
+
+    .footer {
+        /* background-color: #161718; */
+        width: 100%;
+    }
+
+    .footer h6 {
+        font-size: 16px;
+    }
+
+    .footer .join-btn {
+        padding: 8px 14px;
+    }
+
+    .footer input {
+        padding: 9px 25px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .banner h2.title {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    p {
+        font-size: 12px;
+        margin: 8px 10px;
+    }
+
+    .what-is .boxes {
+        margin: 30px 0 25px;
+    }
+
+    .usecase .menu-tab {
+        margin-bottom: 40px;
+    }
+
+    .chat-label {
+        display: block;
+    }
+
+    .flat-toggle .toggle-title {
+        font-size: 18px;
+    }
+
+    .flat-toggle .toggle-content {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .globe .box {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .what-is .box-title h3 {
+        font-size: 12px;
+    }
+
+
+    .offering .document-box .content .content-detail p {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    .offering .document-box .content .content-detail a.btn {
+        padding: 11px 20px;
+    }
+
+    .chat-label.rewards,
+    .chat-label.presale {
+        top: 39%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .offering .document-box {
+        padding: 34px 0 0 54px;
+    }
+
+    .offering .document-box .title {
+        margin-left: -22px;
+    }
+}
