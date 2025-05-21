@@ -10,7 +10,7 @@ export const Banner = () => {
                     <h2 className="title text-center md:text-start">
                         base-layer blockchain <br /><span>Scalable, secure, efficient</span>
                     </h2>
-                    <p className='text-white text-center md:text-start sm:max-w-none max-w-[400px]'>
+                    <p className=' text-center md:text-start sm:max-w-none max-w-[400px]'>
                         Uaxnetwork is a base-layer blockchain built with
                         scalability, security, and efficiency at its core.</p>
                     <div className='md:flex hidden mb-[12px]'>
@@ -36,15 +36,15 @@ export const Banner = () => {
                         <ul className='flex justify-between items-center gap-[70px]'>
                             <li className='flex flex-col items-center '>
                                 <img src="https://images.uaxdlts.com/uax-landing/assets/images/icon/stake.png" alt="no stake" width={34} />
-                                <h5 className='text-white'>Stake</h5>
+                                <h5>Stake</h5>
                             </li>
                             <li className='flex flex-col items-center'>
                                 <img src="https://images.uaxdlts.com/uax-landing/assets/images/icon/build.png" alt="no build" width={34} />
-                                <h5 className='text-white'>Build</h5>
+                                <h5>Build</h5>
                             </ li>
                             <li className='flex flex-col items-center'>
                                 <img src="https://images.uaxdlts.com/uax-landing/assets/images/icon/utilize.png" alt="no utilize" width={34} />
-                                <h5 className='text-white'>Utilize</h5>
+                                <h5>Utilize</h5>
                             </li>
                         </ul>
                     </div>

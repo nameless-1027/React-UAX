@@ -52,7 +52,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className='flex md:justify-start justify-center items-center py-[11px] px-[16px]'>
-                <p className='text-[#FFFFFF80] text-[14px] font-light m-0'>© 2025 UAX. All rights reserved</p>
+                <p className='text-[14px] font-light m-0'>© 2025 UAX. All rights reserved</p>
             </div>
         </div >
     )

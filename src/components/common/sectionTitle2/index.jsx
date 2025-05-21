@@ -7,11 +7,11 @@ const datas = [
             <span className='text-[#CE1FEA]'>UAX.Network</span>
         </h1>,
         content: <p className="max-w-[625px] text-center mx-auto">
-            <span className="text-white">UAX.</span> The
+            <span>UAX.</span> The
             network is a
-            cutting-edge <span className="text-white">base-layer
-                blockchain</span>
-            ecosystem designed to connect <span className="text-white">digital assets and real-world</span>
+            cutting-edge <span>base-layer
+                blockchain </span>
+            ecosystem designed to connect <span>digital assets and real-world </span>
             applications. It tokenizes tangible
             items via Artificial Intelligence Smart Integration (AISI).
         </p>,
@@ -23,7 +23,7 @@ const datas = [
             <span className="text-[#CE1FEA]">
                 Questions </span>
         </h1>,
-        content: <p className="md:text-[16px] text-[13px] text-center text-[#BABABA] mt-0">
+        content: <p className="md:text-[16px] text-[13px] text-center mt-0">
             For our beloved community, we have prepared the
             most frequently asked questions by the users.
         </p>
@@ -35,7 +35,7 @@ const datas = [
             <span className="text-[#7D4689]"> Our </span><span className="text-[#CE1FEA]">
                 Community</span>
         </h1>,
-        content: <p className="text-[13px] sm:text-[16px] text-[#BABABA] sm:mb-[50px] mb-[36px] text-center font-normal">Join our vibrant community and
+        content: <p className="text-[13px] sm:text-[16px] sm:mb-[50px] mb-[36px] text-center font-normal">Join our vibrant community and
             explore
             the endless
             possibilities of UAX together. Engage with like-minded individuals, share
@@ -51,11 +51,11 @@ const datas = [
             Game
             <span className='text-[#B19DB9]'> Changer</span>
         </h1>,
-        content: <p className='text-[16px] text-center max-w-[460px] text-[#BABABA] line-height-[1.45]'>
+        content: <p className='text-[16px] text-center max-w-[460px] line-height-[1.45]'>
             Built To Track Every Click, Every
             Conversation &amp; Every
             User-Even On
-            <span className='text-white'> Privacy</span>-Conscious Browsers.
+            <span> Privacy</span>-Conscious Browsers.
         </p>
     }
 ]

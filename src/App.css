@@ -1,3 +1,37 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000;
+  --content-color: #323232;
+  --button-bg: #3182ce;
+  --menu-color: #fff;
+  --menu-border: transparent;
+  --border-color: #777;
+  --box-bg: #fff;
+  --box-border-color: #777;
+
+  --footer-input-bg: #fff;
+  --footer-mark-bg: #fff;
+
+  --whatIsBack: url(./assets/media/whatIs/what-is-back-light.png)
+}
+
+[data-theme='dark'] {
+  --bg-color: #000;
+  --text-color: #fff;
+  --content-color: #BABABA;
+  --button-bg: #90cdf4;
+  --menu-color: #1e1e1e;
+  --menu-border: #2e2e2e;
+  --border-color: #FFFFFF24;
+  --box-bg: #0e0e0e;
+  --box-border-color: transparent;
+
+  --footer-input-bg: rgba(255, 255, 255, 0.1);
+  --footer-mark-bg: rgba(255, 255, 255, 0.2);
+
+  --whatIsBack: url(./assets/media/whatIs/what-is-back-dark.png)
+}
+
 * {
   position: relative;
   box-sizing: border-box;
@@ -7,16 +41,46 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
-  background: #000;
+  background: var(--bg-color);
 }
 
 nav li {
   cursor: pointer;
 }
 
-a {
+button.btn {
+  border: none;
+  background: #D90EFA;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  cursor: pointer;
+  position: fixed;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out;
+  z-index: 99;
+}
+
+button.btn-theme {
+  bottom: 90px;
+}
+
+button.btn-scroll-top {
+  bottom: 30px;
   color: #fff;
+}
+
+a {
+  color: var(--text-color);
   font-weight: 400;
+}
+
+li {
+  color: var(--text-color);
 }
 
 a.btn {
@@ -58,12 +122,20 @@ a.btn-mobile.btn-ghost {
   border: 1px solid #D90EFA;
 }
 
+a.btn-mobile.btn-ghost span {
+  color: var(--text-color);
+}
+
 p {
   margin: 12px 0 16px;
-  color: #BABABA;
+  color: var(--content-color);
   letter-spacing: 0;
   line-height: 1.73;
   font-weight: 400;
+}
+
+p span {
+  color: var(--text-color);
 }
 
 h1 {
@@ -73,24 +145,29 @@ h1 {
   letter-spacing: 0;
   font-weight: 600;
   line-height: 1.2;
-  color: #fff;
+  color: var(--text-color);
+}
+
+h6 {
+  color: var(--text-color);
 }
 
 ul.sub-menu {
   display: none;
-  background-color: #1e1e1e;
+  background-color: var(--menu-color);
   border-radius: 4px;
-  width: 200px;
+  min-width: 200px;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 ul.sub-menu li {
   padding: 10px 20px;
-  border-bottom: 1px solid #2e2e2e;
+  border-bottom: 1px solid var(--menu-border);
 }
 
 ul.sub-menu li a {
-  color: #fff;
+  color: var(--text-color);
   font-size: 14px;
   line-height: 14px;
 }
@@ -151,7 +228,7 @@ header .mobile-button::after {
 header .mobile-button span,
 header .mobile-button::before,
 header .mobile-button::after {
-  background-color: #ffffff;
+  background-color: var(--text-color);
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   transition: all ease 0.3s;
@@ -191,9 +268,9 @@ header .main-nav {
 }
 
 header .main-nav ul {
-  background-color: #1e1e1e;
+  background-color: var(--menu-color);
   padding: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
 }
 
 header .main-nav ul li {
@@ -206,7 +283,7 @@ header .main-nav ul li {
 }
 
 header .main-nav ul li a {
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   padding: 12px 30px;
   font-size: 16px;
   font-weight: 600;
@@ -215,6 +292,10 @@ header .main-nav ul li a {
 
 header .icon-arrow {
   transition: all 0.3s ease;
+}
+
+header .icon-arrow:before {
+  color: var(--text-color);
 }
 
 header .icon-arrow#active {
@@ -236,12 +317,12 @@ header .icon-arrow#active {
   font-weight: 400;
   text-transform: none;
   letter-spacing: 0 !important;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .banner h2.title span {
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: var(--text-color);
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
@@ -253,6 +334,7 @@ h5 {
   margin-bottom: 1.4px;
   line-height: 26.4px;
   font-size: 12px;
+  color: var(--text-color);
 }
 
 .content li::after {
@@ -324,7 +406,7 @@ h5 {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
-  background-image: url(./assets/media/whatIs/what-is-back.png);
+  background-image: var(--whatIsBack);
 }
 
 .what-is .boxes {
@@ -344,11 +426,11 @@ h5 {
 }
 
 .what-is .box:nth-child(2)>div {
-  border-color: #fff;
+  border-color: var(--text-color);
 }
 
 .what-is .box>div {
-  border: 1px solid #FFFFFF24;
+  border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 46px 30px 55px;
   width: 100%;
@@ -360,7 +442,7 @@ h5 {
   letter-spacing: 0;
   font-weight: 600;
   margin-bottom: 16px;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .what-is .box-content p {
@@ -379,7 +461,7 @@ h5 {
 
 #network h6 {
   line-height: 26px;
-  color: #fff;
+  color: var(--text-color);
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -388,13 +470,13 @@ h5 {
 #network p {
   line-height: 19px;
   margin: 0;
-  color: #ffffffcc;
+  color: var(--content-color);
   font-size: 14px;
 }
 
 #network .box {
-  background-color: #010101;
-  border: 0.8px solid #fff;
+  background-color: var(--box-bg);
+  border: 0.8px solid var(--box-border-color);
   padding: 21px 21px 28px;
   border-radius: 10px;
   width: 350px;
@@ -423,7 +505,7 @@ h5 {
 }
 
 .offering .document-box {
-  background-color: #0e0e0e;
+  background-color: var(--box-bg);
   background-image: none;
   border-radius: 16px;
   margin: 12px 0;
@@ -434,6 +516,7 @@ h5 {
   padding: 47px 0 0 84px;
   width: 100%;
   height: 230px;
+  border: 1px solid var(--box-border-color);
 }
 
 .offering .document-box .title {
@@ -525,13 +608,13 @@ h5 {
   font-weight: 400;
   font-size: 36px;
   line-height: 1.2;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .content-inner .content .block-text p {
   font-size: 16px;
   line-height: 1.5;
-  color: #fff;
+  color: var(--content-color);
 }
 
 .content-inner .content .info {
@@ -571,7 +654,7 @@ h5 {
   font-family: "Zen Dots", cursive;
   font-weight: 400;
   line-height: 1.2;
-  color: #fff;
+  color: var(--text-color);
   text-transform: capitalize;
   font-size: 1.5rem;
 }
@@ -579,7 +662,7 @@ h5 {
 .content-inner .content .info .text {
   font-size: 17px;
   margin-top: 23px;
-  color: #FFFFFF;
+  color: var(--content-color);
 }
 
 .chat-label {
@@ -627,15 +710,15 @@ h5 {
 
 .chat-label p {
   font-weight: 300;
-  color: #FFFFFFCC;
+  color: var(--content-color);
 }
 
 .flat-toggle {
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--box-bg);
   border-radius: 10px;
   padding: 27px 25px 20px 38px;
   margin-bottom: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid var(--border-color);
   cursor: pointer;
   overflow: hidden;
 }
@@ -648,7 +731,7 @@ h5 {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   line-height: 1.2;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .flat-toggle .toggle-content {
@@ -657,7 +740,7 @@ h5 {
   margin-bottom: 0;
   padding-right: 10px;
   /* display: none; */
-  color: #FFFFFF;
+  color: var(--content-color);
 }
 
 .flat-toggle .toggle-content.block {
@@ -667,7 +750,7 @@ h5 {
 .flat-toggle .toggle-title::after {
   font-family: "icomoon";
   content: "\e900";
-  color: #fff;
+  color: var(--text-color);
   font-size: 20px;
   position: absolute;
   top: 0;
@@ -684,19 +767,19 @@ h5 {
   font-weight: 400;
   font-size: 30px;
   margin-bottom: 33px;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .footer input {
   padding: 15px 24px;
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--footer-input-bg);
   width: 100%;
-  border: 1px solid transparent;
+  border: 1px solid var(--border-color);
   box-shadow: none;
   border-radius: 12px;
-  color: #fff;
+  color: var(--text-color);
   margin-bottom: 0 !important;
   font-weight: 500;
 }
@@ -720,7 +803,8 @@ h5 {
   width: 40px;
   height: 40px;
   min-width: 40px;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--footer-mark-bg);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   margin-right: 6px;
   margin-left: 6px;
@@ -746,7 +830,7 @@ h5 {
 
 .list-social li a span {
   font-size: 20px;
-  color: #fff;
+  color: var(--text-color);
 }
 
 @-webkit-keyframes pulse-grow-on-hover {
@@ -766,6 +850,12 @@ h5 {
 @media screen and (max-width: 1280px) {
   .network #network {
     padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header .main-nav {
+    display: none;
   }
 }
 
@@ -821,7 +911,7 @@ h5 {
   }
 
   .footer input {
-    padding:9px 25px;
+    padding: 9px 25px;
   }
 }
 

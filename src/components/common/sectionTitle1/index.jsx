@@ -12,7 +12,7 @@ const datas = [
         content: <p className='text-[20px]'>
             Monitors every action, message, and individual-even
             <br />
-            <span className='text-white'>on browsers</span>&nbsp;designed for privacy.
+            <span>on browsers</span>&nbsp;designed for privacy.
         </p>
     },
     {
@@ -31,10 +31,10 @@ const datas = [
             <span className='text-[#CE1FEA]'>Tokenomics </span>
             at a <br /><span><b className='text-[#7D4689]'>Glance</b></span>
         </h1>,
-        content: <p className='text-[16px] text-[#BABABA] max-w-[460px]'>
+        content: <p className='text-[16px] max-w-[460px]'>
             Revenue Buybacks, Token Burns &amp;
             Limited supply.
-            Use Cases: Utility Token - <span className='text-white'>UAX</span> is Required To Pay For
+            Use Cases: Utility Token - <span>UAX</span> is Required To Pay For
             Conversions, Customer
             Events &amp;
             Advanced Analytics On The UAX Platform.
@@ -59,7 +59,7 @@ export const SectionTitle1 = ({ type }) => {
                 <div>
                     {
                         type === 3 ?
-                            <h6 className='text-[20px] text-white font-bold'>Deflationary Mechanisms:</h6>
+                            <h6 className='text-[20px] font-bold'>Deflationary Mechanisms:</h6>
                             : <img src="media/lines/build.svg" className='md:block hidden' alt="build" />
                     }
                     {

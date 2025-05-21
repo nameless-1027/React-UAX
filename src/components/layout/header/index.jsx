@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { ThemeContext } from '../../../context/themeContext';
 
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -9,12 +10,14 @@ export const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isMobileEcosystemOpen, setIsMobileEcosystemOpen] = useState(false);
 
+    const { theme } = useContext(ThemeContext);
+
     return (
         <header className='fixed top-0 left-0 flex justify-between items-center p-8 h-[80px] w-full z-10'>
             <div className='container mx-auto flex justify-between items-center xl:max-w-[1440px]' >
                 <div className="flex items-center justify-between xl:px-[127px] w-full">
                     <img
-                        src={"https://images.uaxdlts.com/uax-landing/assets/images/logo/uax_white_logo.png?quality=lossless"}
+                        src={`/media/logo/${theme}.png`}
                         alt="UAX Logo"
                         width={130}
                     />
@@ -22,12 +25,12 @@ export const Header = () => {
                         <ul className='flex items-center'>
                             <li className='mr-[40px] lg:block hidden'><Link to="/">Home</Link></li>
                             <li
-                                className='mr-[40px] text-white py-[30px] lg:block hidden'
+                                className='mr-[40px]  py-[30px] lg:block hidden'
                                 onMouseEnter={() => setIsOpen(true)}
                                 onMouseLeave={() => setIsOpen(false)}
                             >
                                 Ecosystem
-                                <i className='fa-solid fa-chevron-down text-white size-[14px] absolute right-[-24px] top-[34px]' />
+                                <i className='fa-solid fa-chevron-down size-[14px] absolute right-[-24px] top-[34px]' />
                                 <AnimatePresence>
                                     {isOpen && (
                                         <motion.ul className='absolute top-full left-0 sub-menu fade-up'
@@ -135,52 +138,47 @@ export const Header = () => {
                                 <a href="#" className="header-link">Ecosystem</a>
                                 <span className="icon-arrow" id={isMobileEcosystemOpen ? "active" : ""} />
                             </li>
-                            <li>
-                                <AnimatePresence>
-                                    {isMobileEcosystemOpen && (
-                                        <motion.ul
-                                            className='top-full left-0 sub-menu fade-up'
-                                            id="children-menu"
-                                            initial={{ height: 0, visibility: "hidden" }}
-                                            animate={{ height: "auto", visibility: "visible" }}
-                                            exit={{ height: 0, visibility: "hidden" }}
-                                            transition={{ duration: 0.4 }}
-                                            style={{ display: "block" }}
-                                        >
-                                            <li className="menu-item">
-                                                <a
-                                                    target="_blank"
-                                                    href="https://uaxwallet.com"
-                                                    className="header-link"
-                                                >Uax Wallet</a>
-                                            </li>
-                                            <li className="menu-item">
-                                                <a
-                                                    target="_blank"
-                                                    href="https://dfs.uax.network/"
-                                                    className="header-link"
-                                                    style={{ color: "rgb(255, 255, 255)" }}
-                                                >Uax DFS</a>
-                                            </li>
-                                            <li className="menu-item">
-                                                <a
-                                                    target="_blank"
-                                                    href="https://uaxscan.com/"
-                                                    className="header-link"
-                                                    style={{ color: "rgb(255, 255, 255)" }}
-                                                >Uax scan</a>
-                                            </li>
-                                            <li className="menu-item">
-                                                <a
-                                                    href="https://github.com/uaxnetwork"
-                                                    className="header-link"
-                                                    style={{ color: "rgb(255, 255, 255)" }}
-                                                >Github</a>
-                                            </li>
-                                        </motion.ul>
-                                    )}
-                                </AnimatePresence>
-                            </li>
+                            <AnimatePresence>
+                                {isMobileEcosystemOpen && (
+                                    <motion.ul
+                                        className='top-full w-full left-0 sub-menu fade-up'
+                                        id="children-menu"
+                                        initial={{ height: 0, visibility: "hidden" }}
+                                        animate={{ height: "auto", visibility: "visible" }}
+                                        exit={{ height: 0, visibility: "hidden" }}
+                                        transition={{ duration: 0.4 }}
+                                        style={{ display: "block", boxShadow: "none" }}
+                                    >
+                                        <li className="menu-item">
+                                            <a
+                                                target="_blank"
+                                                href="https://uaxwallet.com"
+                                                className="header-link"
+                                            >Uax Wallet</a>
+                                        </li>
+                                        <li className="menu-item">
+                                            <a
+                                                target="_blank"
+                                                href="https://dfs.uax.network/"
+                                                className="header-link"
+                                            >Uax DFS</a>
+                                        </li>
+                                        <li className="menu-item">
+                                            <a
+                                                target="_blank"
+                                                href="https://uaxscan.com/"
+                                                className="header-link"
+                                            >Uax scan</a>
+                                        </li>
+                                        <li className="menu-item">
+                                            <a
+                                                href="https://github.com/uaxnetwork"
+                                                className="header-link"
+                                            >Github</a>
+                                        </li>
+                                    </motion.ul>
+                                )}
+                            </AnimatePresence>
                             <li className="menu-item">
                                 <a href="#usecase" className="header-link">Usecases</a>
                             </li>
