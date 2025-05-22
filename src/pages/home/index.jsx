@@ -10,6 +10,7 @@ import { Glance } from "../../components/layout/glance";
 import { FAQ } from "../../components/layout/FAQ";
 import { Join } from "../../components/layout/join";
 import { Network } from "../../components/layout/network";
+import { Partner } from "../../components/layout/partner";
 
 import '../../assets/styles/home.css';
 
@@ -26,6 +27,7 @@ export const Home = () => {
             <Usecase />
             <Glance />
             <FAQ />
+            < Partner />
             <Join />
         </>
 
