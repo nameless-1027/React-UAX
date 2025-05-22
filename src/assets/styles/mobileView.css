@@ -24,6 +24,10 @@
     .allow .numbers {
         padding: 51px 80px 0 90px;
     }
+
+    .wallet .wallet-main {
+        padding: 58px 72px 24px;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -76,6 +80,14 @@
     .road-map .road-map-main .box-roadmap {
         width: 240px;
     }
+
+    .wallet-main-text {
+        font-size: 12px;
+    }
+
+    .wallet-small-text {
+        font-size: 8px;
+    }
 }
 
 @media screen and (max-width:875px) {
@@ -106,7 +118,15 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+
+    .banner>div {
+        background-image: url('../media/network_opacity.png');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
     .what-is .box-title h3 {
         font-size: 20px;
         margin: 0;
@@ -134,8 +154,7 @@
         padding: 14px 18px;
     }
 
-    .footer {
-        /* background-color: #161718; */
+    /* .footer {
         width: 100%;
     }
 
@@ -150,6 +169,11 @@
     .footer input {
         padding: 9px 25px;
         border-radius: 6px;
+    } */
+
+    .footer .footer-right>div {
+        width: 50%;
+        margin-top: 36px;
     }
 }
 
@@ -193,6 +217,15 @@
     .road-map .road-map-main {
         padding: 0 6px;
     }
+
+    .wallet .wallet-main {
+        padding: 32px 48px 16px;
+    }
+
+    .flat-toggle {
+        padding: 16px 38px 14px 22px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -223,6 +256,14 @@
     .road-map .road-map-main .box-roadmap {
         width: 80%;
     }
+
+    .wallet .wallet-main {
+        padding: 20px 24px 12px;
+    }
+
+    .footer .footer-left {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -233,5 +274,18 @@
 
     .offering .document-box .title {
         margin-left: -22px;
+    }
+
+    .footer .footer-right>div {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .footer .footer-right ul {
+        padding-top: 0 !important;
+    }
+
+    .footer .footer-right li {
+        margin-top: 12px;
     }
 }

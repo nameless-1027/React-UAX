@@ -58,7 +58,7 @@ h5 {
     flex-direction: column;
     align-items: flex-start;
     padding: 29px 30px 27px;
-    border: 1px solid #FFFFFF24;
+    border: 1px solid var(--border-color);
     border-radius: 6px;
     margin: 18px 0;
 }
@@ -98,6 +98,65 @@ h5 {
     background-size: cover;
 }
 
+.wallet .wallet-main {
+    background: linear-gradient(to right, #2f0781, #f00dc3);
+    border-radius: 18px;
+    padding: 58px 0 24px 72px;
+    overflow: hidden;
+}
+
+.wallet .wallet-main .phone {
+    width: 450px;
+    margin: -10px -70px -176px -10px;
+}
+
+.wallet .wallet-main .phone-single {
+    margin: -10px -150px -176px -40px;
+}
+
+.wallet-download-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wallet-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    /* transition: background 0.2s, border 0.2s; */
+    min-width: 120px;
+
+    margin-bottom: 6px;
+}
+
+.faq-mobile .wallet-download-buttons .wallet-btn {
+    width: 100%;
+}
+
+.wallet-btn img {
+    width: 28px;
+    height: 28px;
+}
+
+.wallet-small-text {
+    display: block;
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+.wallet-main-text {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
 .what-is {
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -130,6 +189,7 @@ h5 {
     border-radius: 10px;
     padding: 46px 30px 55px;
     width: 100%;
+    background-color: var(--box-bg);
 }
 
 .what-is .box-title h3 {
@@ -412,7 +472,7 @@ h5 {
 .flat-toggle {
     background: var(--box-bg);
     border-radius: 10px;
-    padding: 27px 25px 20px 38px;
+    padding: 27px 38px 20px 32px;
     margin-bottom: 20px;
     border: 1px solid var(--border-color);
     cursor: pointer;
@@ -451,6 +511,7 @@ h5 {
     position: absolute;
     top: 0;
     right: 0;
+    transform: translate(100%, 0);
     transition: 0.3s all ease-in-out;
 }
 

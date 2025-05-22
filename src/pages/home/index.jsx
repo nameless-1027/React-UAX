@@ -2,6 +2,7 @@ import React from "react";
 
 import { Banner } from "../../components/layout/Banner";
 import { Globe } from "../../components/layout/globe";
+import { Wallet } from "../../components/layout/wallet";
 import { WhatIs } from "../../components/layout/whatIs";
 import { Offering } from "../../components/layout/offering";
 import { Usecase } from "../../components/layout/usecase";
@@ -18,6 +19,7 @@ export const Home = () => {
         <>
             <Banner />
             <Globe />
+            <Wallet />
             <WhatIs />
             <Offering />
             <Network />

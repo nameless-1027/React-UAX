@@ -4,7 +4,7 @@ import { ThemeContext } from '../../../context/themeContext';
 import { SectionTitle1 } from '../../common/sectionTitle1';
 import { SectionTitle2 } from '../../common/sectionTitle2';
 
-import { datas } from '../../data'; 
+import { datas } from '../../data';
 
 export const Globe = () => {
     const { theme } = useContext(ThemeContext);
@@ -22,23 +22,24 @@ export const Globe = () => {
                 </div>
                 <div className='flex items-end md:w-[70%] w-full boxes'>
                     {
-                        datas.global.map((data, idx) => <div className='w-[49%] box' key={idx}>
-                            <div className="box-title">
-                                <a href="#" className='flex items-center'>
-                                    <img
-                                        src={data.src}
-                                        alt={data.alt}
-                                        width={"20px"}
-                                        height={"20px"}
-                                        className='mr-[10px]'
-                                    />
-                                    {data.title}
-                                </a>
+                        datas.global.map((data, idx) =>
+                            <div className='w-[49%] box' key={idx}>
+                                <div className="box-title">
+                                    <a href="#" className='flex items-center'>
+                                        <img
+                                            src={data.src}
+                                            alt={data.alt}
+                                            width={"20px"}
+                                            height={"20px"}
+                                            className='mr-[10px]'
+                                        />
+                                        {data.title}
+                                    </a>
+                                </div>
+                                <div className="box-content">
+                                    <span>{data.value}</span>
+                                </div>
                             </div>
-                            <div className="box-content">
-                                <span>{data.value}</span>
-                            </div>
-                        </div>
                         )
                     }
                 </div>

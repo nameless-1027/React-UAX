@@ -5,4 +5,15 @@ module.exports = {
         extend: {},
     },
     plugins: [],
+    theme: {
+        screens: {
+            'moblie':'480px',
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': '1280px',
+            'desktop': '1440px',
+            '2xl': '1536px',
+        },
+    },
 }

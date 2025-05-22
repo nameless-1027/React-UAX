@@ -6,8 +6,8 @@ export const WhatIs = () => {
     return (
         <div className='flex flex-col container mx-auto sm:px-[38px] px-[16px] py-[15px] what-is'>
             <SectionTitle2 type={1} />
-            <div className='flex flex-wrap justify-between boxes px-[16px] lg:sm:px-[80px] px-0'>
-                <div className='md:w-[33.33%] w-full box'>
+            <div className='flex flex-wrap justify-between boxes lg:sm:px-[80px] px-0'>
+                <div className='md:w-1/3 w-full box'>
                     <div>
                         <div className='box-title'>
                             <h3 className='text-center md:text-[18px] '>
@@ -22,7 +22,7 @@ export const WhatIs = () => {
                         </div>
                     </div>
                 </div>
-                <div className='md:w-[33.33%] w-full box'>
+                <div className='md:w-1/3 w-full box'>
                     <div>
                         <div className='box-title'>
                             <h3 className='text-center md:text-[18px] '>
@@ -37,7 +37,7 @@ export const WhatIs = () => {
                         </div>
                     </div>
                 </div>
-                <div className='md:w-[33.33%] w-full box'>
+                <div className='md:w-1/3 w-full box'>
                     <div>
                         <div className='box-title'>
                             <h3 className='text-center md:text-[18px] text-[20px]'>
