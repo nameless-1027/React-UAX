@@ -28,7 +28,7 @@ export const Home = () => {
             <Glance />
             <FAQ />
             < Partner />
-            <Join />
+            <Join type={true} />
         </>
 
     );

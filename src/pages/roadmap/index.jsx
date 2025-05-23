@@ -11,7 +11,7 @@ export const Roadmap = () => {
         <>
             <Allow />
             <RoadmapMail />
-            <Join />
+            <Join type={true} />
         </>
     );
 };

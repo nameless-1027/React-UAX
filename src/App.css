@@ -127,12 +127,12 @@ a.btn-mobile {
   letter-spacing: 1px;
 }
 
-a.btn-mobile.btn-ghost {
+a.btn-ghost {
   background: transparent !important;
   border: 1px solid #D90EFA;
 }
 
-a.btn-mobile.btn-ghost span {
+a.btn-ghost span {
   color: var(--text-color);
 }
 

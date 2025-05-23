@@ -53,21 +53,21 @@ export const Footer = () => {
                             <div className="title">SITEMAP</div>
                             <div className="flex content-list">
                                 <ul>
-                                    <li><a href="#">Home</a></li>
+                                    <li><a href="/home">Home</a></li>
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">Technology</a></li>
                                     <li><a href="#">Run-a-node</a></li>
-                                    <li><a href="#">Metrices</a></li>
+                                    <li><a href="/metrices">Metrices</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div className=' miniMoblie:px-0 px-[28px]'>
                             <ul className='pt-[20px]'>
                                 <li><a href="#">Presskit</a></li>
-                                <li><a href="#">Roadmap</a></li>
+                                <li><a href="/roadmap">Roadmap</a></li>
                                 <li><a href="#">Tokenomics</a></li>
                                 <li><a href="#">Whitepaper</a></li>
-                                <li><a href="#">Podcast</a></li>
+                                <li><a href="/podcasts">Podcast</a></li>
                             </ul>
                         </div>
                         <div className=' miniMoblie:px-0 px-[28px]'>

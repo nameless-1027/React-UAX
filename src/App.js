@@ -2,11 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from './context/themeContext';
 
-import { Header } from './components/layout/header';
+import { Header } from './components/common/header';
+import { Footer } from './components/common/footer';
+
 import { Home } from './pages/home';
 import { Roadmap } from './pages/roadmap';
 import { Portal } from './pages/portal';
-import { Footer } from './components/layout/footer';
+import { Podcasts } from './pages/podcasts';
 
 import ScrollToTopButton from './components/common/scrollTop';
 import Theme from './components/common/theme';
@@ -23,7 +25,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/roadmap" element={<Roadmap />} />
-          <Route path="/*" element={<Portal />} />
+          <Route path="/metrices" element={<Portal />} />
+          <Route path="/podcasts" element={<Podcasts />} />
         </Routes>
         <Theme />
         <ScrollToTopButton />

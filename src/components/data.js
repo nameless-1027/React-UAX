@@ -1,6 +1,106 @@
 import { steps } from "framer-motion";
 
 export const datas = {
+    sectionTitle1: [
+        {
+            image: "media/lines/core1.png",
+            title: <h1>
+                <span className='text-[#7D4689]'>Why</span><br />
+                <span className='text-[#CE1FEA]'>UAX </span>
+                is a<br />Game
+                <span className='text-[#B19DB9]'> Changer</span>
+            </h1>,
+            content: <p className='text-[20px]'>
+                Monitors every action, message, and individual-even
+                <br />
+                <span>on browsers</span>&nbsp;designed for privacy.
+            </p>
+        },
+        {
+            image: "media/lines/core2.svg",
+            title: <h1> <span className='text-[#7D4689]'>Core</span><br />
+                Offerings of<br /><span className='text-[#CE1FEA]'>UAX.Network</span>
+            </h1>,
+            content: <p className='md:text-[20px] text-[14px] md:ml-[10px] ml-[30px]'>
+                Drives Web3 innovation: providing secure wallets,
+                real-time monitoring, seamless cross-chain connectivity, and NFTs.
+            </p>
+        },
+        {
+            image: "media/glance/Group.png",
+            title: <h1>
+                <span className='text-[#CE1FEA]'>Tokenomics </span>
+                at a <br /><span><b className='text-[#7D4689]'>Glance</b></span>
+            </h1>,
+            content: <p className='text-[16px] max-w-[460px]'>
+                Revenue Buybacks, Token Burns &amp;
+                Limited supply.
+                Use Cases: Utility Token - <span>UAX</span> is Required To Pay For
+                Conversions, Customer
+                Events &amp;
+                Advanced Analytics On The UAX Platform.
+            </p>
+        }
+    ],
+    sectionTitle2: [
+        {
+            title: <h1 className='text-center'>
+                <span className='text-[#7D4689]'>What</span> is<br />
+                <span className='text-[#CE1FEA]'>UAX.Network</span>
+            </h1>,
+            content: <p className="max-w-[625px] text-center mx-auto">
+                <span>UAX.</span> The
+                network is a
+                cutting-edge <span>base-layer
+                    blockchain </span>
+                ecosystem designed to connect <span>digital assets and real-world </span>
+                applications. It tokenizes tangible
+                items via Artificial Intelligence Smart Integration (AISI).
+            </p>,
+        },
+        {
+            title: <h1 className='text-center md:mt-[30px] mt-[16px] md:mb-[16px] mb-[10px] md:text-[45px] text-[22px] font-bold'>
+                Frequently
+                <span className="text-[#7D4689]"> Asked </span>
+                <span className="text-[#CE1FEA]">
+                    Questions </span>
+            </h1>,
+            content: <p className="md:text-[16px] text-[13px] text-center mt-0">
+                For our beloved community, we have prepared the
+                most frequently asked questions by the users.
+            </p>
+
+        },
+        {
+            title: <h1 className='text-center mt-[16px] mb-[10px] text-[30px] sm:text-[45px] font-bold'>
+                Join
+                <span className="text-[#7D4689]"> Our </span><span className="text-[#CE1FEA]">
+                    Community</span>
+            </h1>,
+            content: <p className="text-[13px] sm:text-[16px] sm:mb-[50px] mb-[36px] text-center font-normal">Join our vibrant community and
+                explore
+                the endless
+                possibilities of UAX together. Engage with like-minded individuals, share
+                insights, and shape the future of blockchain gaming. Experience the power of collaboration
+                in
+                our dynamic ecosystem.
+            </p>
+        },
+        {
+            title: <h1 className='text-center text-[32px]'>
+                <span className='text-[#7D4689]'>Why </span>
+                <span className='text-[#CE1FEA]'>UAX </span> is a <br />
+                Game
+                <span className='text-[#B19DB9]'> Changer</span>
+            </h1>,
+            content: <p className='text-[16px] text-center max-w-[460px] line-height-[1.45]'>
+                Built To Track Every Click, Every
+                Conversation &amp; Every
+                User-Even On
+                <span> Privacy</span>-Conscious Browsers.
+            </p>
+        }
+    ],
     glance: [
         {
             label: "Marketing",
@@ -137,7 +237,15 @@ export const datas = {
                     <span className="text-[#9B07B3]"> Portal</span>
                 </h1>,
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore'
-        }
+        },
+        {
+            title:
+                <h1 className="text-center text-[50px] font-semibold mb-4">
+                    UAX
+                    <span className="text-[#9B07B3]"> Podcasts</span>
+                </h1>,
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore'
+        },
     ],
     times: [
         {
@@ -293,5 +401,22 @@ export const datas = {
                 }
             })
         }
+    ],
+    episodes: [
+        {
+            Nr: 3,
+            title: 'Podcast #3 Blockchain',
+            date: 'May 19, 2025'
+        },
+        {
+            Nr: 2,
+            title: 'Podcast #3 Blockchain',
+            date: 'May 19, 2025'
+        },
+        {
+            Nr: 1,
+            title: 'Podcast #3 Blockchain',
+            date: 'May 19, 2025'
+        },
     ]
 }

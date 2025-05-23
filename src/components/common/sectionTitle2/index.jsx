@@ -1,64 +1,5 @@
 import React from 'react';
-
-const datas = [
-    {
-        title: <h1 className='text-center'>
-            <span className='text-[#7D4689]'>What</span> is<br />
-            <span className='text-[#CE1FEA]'>UAX.Network</span>
-        </h1>,
-        content: <p className="max-w-[625px] text-center mx-auto">
-            <span>UAX.</span> The
-            network is a
-            cutting-edge <span>base-layer
-                blockchain </span>
-            ecosystem designed to connect <span>digital assets and real-world </span>
-            applications. It tokenizes tangible
-            items via Artificial Intelligence Smart Integration (AISI).
-        </p>,
-    },
-    {
-        title: <h1 className='text-center md:mt-[30px] mt-[16px] md:mb-[16px] mb-[10px] md:text-[45px] text-[22px] font-bold'>
-            Frequently
-            <span className="text-[#7D4689]"> Asked </span>
-            <span className="text-[#CE1FEA]">
-                Questions </span>
-        </h1>,
-        content: <p className="md:text-[16px] text-[13px] text-center mt-0">
-            For our beloved community, we have prepared the
-            most frequently asked questions by the users.
-        </p>
-
-    },
-    {
-        title: <h1 className='text-center mt-[16px] mb-[10px] text-[30px] sm:text-[45px] font-bold'>
-            Join
-            <span className="text-[#7D4689]"> Our </span><span className="text-[#CE1FEA]">
-                Community</span>
-        </h1>,
-        content: <p className="text-[13px] sm:text-[16px] sm:mb-[50px] mb-[36px] text-center font-normal">Join our vibrant community and
-            explore
-            the endless
-            possibilities of UAX together. Engage with like-minded individuals, share
-            insights, and shape the future of blockchain gaming. Experience the power of collaboration
-            in
-            our dynamic ecosystem.
-        </p>
-    },
-    {
-        title: <h1 className='text-center text-[32px]'>
-            <span className='text-[#7D4689]'>Why </span>
-            <span className='text-[#CE1FEA]'>UAX </span> is a <br />
-            Game
-            <span className='text-[#B19DB9]'> Changer</span>
-        </h1>,
-        content: <p className='text-[16px] text-center max-w-[460px] line-height-[1.45]'>
-            Built To Track Every Click, Every
-            Conversation &amp; Every
-            User-Even On
-            <span> Privacy</span>-Conscious Browsers.
-        </p>
-    }
-]
+import { datas } from '../../data';
 
 export const SectionTitle2 = ({ type }) => {
     return (
@@ -83,10 +24,10 @@ export const SectionTitle2 = ({ type }) => {
                         />)
             }
             {
-                datas[type - 1].title
+                datas.sectionTitle2[type - 1].title
             }
             {
-                datas[type - 1].content
+                datas.sectionTitle2[type - 1].content
             }
         </div>
     )

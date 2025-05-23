@@ -5,7 +5,7 @@ import { datas } from '../../data';
 export const Time = () => {
     return (
         <div className='w-full'>
-            <div className='container mx-auto xl:sm:px-[80px] lg:px-[40px] px-[16px] portal'>
+            <div className='container mx-auto xl:px-[80px] lg:px-[40px] px-[16px] portal'>
                 <div className='xl:px-[60px] px-0 flex flex-wrap justify-between boxes'>
                     {
                         datas.times.map((_time, _idx) =>

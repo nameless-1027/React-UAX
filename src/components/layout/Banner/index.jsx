@@ -7,7 +7,7 @@ export const Banner = () => {
                 className='container mx-auto sm:px-[12px] px-[18px] '
             >
                 <div className='flex justify-between items-start xl:px-[80px] lg:px-[40px]'>
-                    <div className="flex flex-col justify-start md:items-start items-center xl:sm:px-[80px] px-0 md:w-[50%] w-full h-full">
+                    <div className="flex flex-col justify-start md:items-start items-center xl:px-[80px] px-0 md:w-[50%] w-full h-full">
                         <h2 className="title text-center md:text-start">
                             base-layer blockchain <br /><span>Scalable, secure, efficient</span>
                         </h2>
