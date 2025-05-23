@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-UAX/static/css/main.a0334806.css",
-    "main.js": "/React-UAX/static/js/main.de8ddce2.js",
+    "main.css": "/React-UAX/static/css/main.c25050f7.css",
+    "main.js": "/React-UAX/static/js/main.0fd8db13.js",
     "static/js/845.d941f4fd.chunk.js": "/React-UAX/static/js/845.d941f4fd.chunk.js",
     "static/media/what-is-back-light.png": "/React-UAX/static/media/what-is-back-light.40bbb0f0fafb78fdc4ad.png",
     "static/media/rm-2.png": "/React-UAX/static/media/rm-2.b422e9065fad4e128d9c.png",
@@ -13,17 +13,18 @@
     "static/media/what-is-back-dark.png": "/React-UAX/static/media/what-is-back-dark.feb5c372c201503c9fdd.png",
     "static/media/network_opacity.png": "/React-UAX/static/media/network_opacity.eaa41889820a2a0d35f1.png",
     "static/media/icomoon.svg?oe5mqk": "/React-UAX/static/media/icomoon.3e9272dd34e797f45f32.svg",
+    "static/media/top-back.png": "/React-UAX/static/media/top-back.64cf531f52a1e9a48c0f.png",
     "static/media/border.png": "/React-UAX/static/media/border.a2d2cab586cd47636148.png",
     "static/media/icomoon.eot?oe5mqk": "/React-UAX/static/media/icomoon.5b704c4214da9eeb24d5.eot",
     "static/media/icomoon.woff?oe5mqk": "/React-UAX/static/media/icomoon.fb3a2871f26a61376d90.woff",
     "static/media/icomoon.ttf?oe5mqk": "/React-UAX/static/media/icomoon.866ccad977d3d2783dc6.ttf",
     "index.html": "/React-UAX/index.html",
-    "main.a0334806.css.map": "/React-UAX/static/css/main.a0334806.css.map",
-    "main.de8ddce2.js.map": "/React-UAX/static/js/main.de8ddce2.js.map",
+    "main.c25050f7.css.map": "/React-UAX/static/css/main.c25050f7.css.map",
+    "main.0fd8db13.js.map": "/React-UAX/static/js/main.0fd8db13.js.map",
     "845.d941f4fd.chunk.js.map": "/React-UAX/static/js/845.d941f4fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0334806.css",
-    "static/js/main.de8ddce2.js"
+    "static/css/main.c25050f7.css",
+    "static/js/main.0fd8db13.js"
   ]
 }
