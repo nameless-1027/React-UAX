@@ -1,3 +1,5 @@
+import { steps } from "framer-motion";
+
 export const datas = {
     glance: [
         {
@@ -126,5 +128,170 @@ export const datas = {
             name: "@UAX stake",
             description: "Maximize your potential with UAX stake, empowering participation and growth within a vibrant decentralized network. Secure your future in the evolving landscape of decentralized finance with UAX.",
         },
+    ],
+    heading: [
+        {
+            title:
+                <h1 className="text-center text-[50px] font-semibold mb-4">
+                    Metrices
+                    <span className="text-[#9B07B3]"> Portal</span>
+                </h1>,
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore'
+        }
+    ],
+    times: [
+        {
+            head: 'Block Time',
+            Nr: '2.174',
+            unit: 'Sec'
+        },
+        {
+            head: 'Transactions per second',
+            Nr: '10.7',
+            unit: 'Sec'
+        },
+        {
+            head: 'Total Transactions',
+            Nr: '3,023,729',
+            unit: 'txns'
+        },
+        {
+            head: 'Total Consensus Stake',
+            Nr: '1.57B',
+            unit: 'Uaxn'
+        },
+    ],
+    chartState: [
+        'Total Accounts', 'Transactions Volume'
+    ],
+    chartData: [
+        ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
+        {
+            datasets: [
+                [
+                    {
+                        label: "1D",
+                        data: [20, 30, 40, 10, 60, 30, 70, 80, 20, 20, 40, 60, 70]
+                    }
+                ],
+                [
+                    {
+                        label: "7D",
+                        data: [30, 80, 30, 10, 60, 20, 30, 20, 20, 40, 70, 60, 70]
+                    }
+                ],
+                [
+                    {
+                        label: "1W",
+                        data: [70, 80, 20, 30, 20, 20, 60, 30, 40, 40, 10, 60, 70]
+                    }
+                ],
+                [
+                    {
+                        label: "1M",
+                        data: [40, 10, 60, 20, 20, 40, 30, 20, 30, 70, 80, 60, 70]
+                    }
+                ],
+            ],
+            options: (theme) => ({
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            color: theme === 'dark' ? '#949494' : '#000',
+                            font: {
+                                size: 10
+                            }
+                        },
+                        grid: {
+                            display: false,
+                        },
+                    },
+                    y: {
+                        // type: 'linear',
+                        min: 0,
+                        max: 100,
+                        ticks: {
+                            color: theme === 'dark' ? '#949494' : '#000',
+                            font: {
+                                size: 10
+                            }
+                        },
+                        grid: {
+                            color: false,
+                        },
+                    },
+                }
+            })
+        },
+        {
+            datasets: [
+                [
+                    {
+                        label: "1D",
+                        data: [200, 300, 400, 100, 600, 300, 700, 800, 200, 200, 400, 600, 700]
+                    }
+                ],
+                [
+                    {
+                        label: "7D",
+                        data: [300, 800, 300, 100, 600, 200, 300, 200, 200, 400, 700, 600, 700]
+                    }
+                ],
+                [
+                    {
+                        label: "1W",
+                        data: [700, 800, 200, 300, 200, 200, 600, 300, 400, 400, 100, 600, 700]
+                    }
+                ],
+                [
+                    {
+                        label: "1M",
+                        data: [400, 100, 600, 200, 200, 400, 300, 200, 300, 700, 800, 600, 700]
+                    }
+                ],
+            ],
+            options: (theme) => ({
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            color: theme === 'dark' ? '#949494' : '#000',
+                            font: {
+                                size: 10
+                            }
+                        },
+                        grid: {
+                            display: false,
+                        },
+                    },
+                    y: {
+                        // type: 'linear',
+                        min: 0,
+                        max: 1000,
+                        ticks: {
+                            color: theme === 'dark' ? '#949494' : '#000',
+                            font: {
+                                size: 10
+                            },
+                            stepSize: 200
+                        },
+                        grid: {
+                            color: false,
+                        },
+                    },
+                }
+            })
+        }
     ]
 }

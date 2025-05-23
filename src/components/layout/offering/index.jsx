@@ -12,7 +12,7 @@ export const Offering = () => {
                 <SectionTitle1 type={2} />
             </div>
             <div className='w-full flex justify-between items-center sm:pt-[40px] pt-[20px] offering flex-wrap'>
-                {datas.offering.map((data, idx) => <div className='flex lg:w-[50%] w-full px-[10px]'>
+                {datas.offering.map((data, idx) => <div key={idx} className='flex lg:w-[50%] w-full px-[10px]'>
                     <div className="document-box">
                         <a href="#" className="title">
                             <img
@@ -28,13 +28,14 @@ export const Offering = () => {
                                         {data.content}
                                     </p>
                                 </div>
-                                <div className="group-button">
+                                {/* <div className="group-button">
                                     <a href="#" className="btn">
                                         Explore
                                         <i className="fa fa-long-arrow-right ml-[4px]" aria-hidden="true">
                                         </i>
                                     </a>
-                                </div>
+                                </div> */}
+                                <a href="#" class="text-[#b31bd8] font-[500] text-[18px]">Read more <i class="fa fa-long-arrow-right text-[#b31bd8]"></i></a>
                             </div>
                             <div className="content-image">
                                 <img

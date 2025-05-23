@@ -3,11 +3,11 @@ import React, { createContext, useState, useEffect } from 'react';
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('');
 
     useEffect(() => {
         const savedTheme = localStorage.getItem('app-theme');
-        if (savedTheme) setTheme(savedTheme);
+        savedTheme ? setTheme(savedTheme) : setTheme('light');
     }, []);
 
     useEffect(() => {

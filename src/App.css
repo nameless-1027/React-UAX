@@ -3,17 +3,21 @@
   --text-color: #000;
   --content-color: #323232;
   --button-bg: #3182ce;
+
   --menu-color: #fff;
   --menu-border: transparent;
+  --menu-border-reverse: #1e1e1e;
   --menu-footer-border: #2e2e2e;
   --border-color: #777;
+
   --box-bg: #fff;
   --box-border-color: #777;
 
   --footer-input-bg: #fff;
   --footer-mark-bg: #fff;
 
-  --whatIsBack: url(./assets/media/whatIs/what-is-back-light.png)
+  --whatIsBack: url(./assets/media/whatIs/what-is-back-light.png);
+  --box-image: transparent;
 }
 
 [data-theme='dark'] {
@@ -21,17 +25,21 @@
   --text-color: #fff;
   --content-color: #BABABA;
   --button-bg: #90cdf4;
+
   --menu-color: #1e1e1e;
   --menu-border: #2e2e2e;
+  --menu-border-reverse: transparent;
   --menu-footer-border: transparent;
   --border-color: #FFFFFF24;
+
   --box-bg: #0e0e0e;
   --box-border-color: transparent;
 
   --footer-input-bg: rgba(255, 255, 255, 0.1);
   --footer-mark-bg: rgba(255, 255, 255, 0.2);
 
-  --whatIsBack: url(./assets/media/whatIs/what-is-back-dark.png)
+  --whatIsBack: url(./assets/media/whatIs/what-is-back-dark.png);
+  --box-image: linear-gradient(to right, #1e1e1e, #000000b9);
 }
 
 * {
@@ -183,7 +191,7 @@ i:before {
 }
 
 header {
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
 }
 
 header .line {

@@ -6,7 +6,7 @@ export const Footer = () => {
     const { theme } = useContext(ThemeContext);
 
     return (
-        <div className='flex flex-col container mx-auto xl:px-[38px] px-[16px] py-[15px]'>
+        <div className='flex flex-col container mx-auto xl:px-[38px] px-[16px] pt-[46px] pb-[15px]'>
             <div className='lg:xl:px-[80px] px-0'>
                 <div className='flex lg:flex-row flex-col lg:gap-[16px] gap-8 lg:justify-between justify-center sm:p-[68px] p-[36px] footer'>
                     <div className='flex flex-col footer-left'>
@@ -49,7 +49,7 @@ export const Footer = () => {
                         </div>
                     </div>
                     <div className='flex md:gap-[41px] gap-0 lg:justify-between justify-center md:flex-nowrap flex-wrap footer-right'>
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col miniMoblie:px-0 px-[28px]'>
                             <div className="title">SITEMAP</div>
                             <div className="flex content-list">
                                 <ul>
@@ -61,7 +61,7 @@ export const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div>
+                        <div className=' miniMoblie:px-0 px-[28px]'>
                             <ul className='pt-[20px]'>
                                 <li><a href="#">Presskit</a></li>
                                 <li><a href="#">Roadmap</a></li>
@@ -70,7 +70,7 @@ export const Footer = () => {
                                 <li><a href="#">Podcast</a></li>
                             </ul>
                         </div>
-                        <div>
+                        <div className=' miniMoblie:px-0 px-[28px]'>
                             <ul className='pt-[20px]'>
                                 <li><a href="#">Governance</a></li>
                                 <li><a href="#">DAO’s</a></li>
@@ -78,7 +78,7 @@ export const Footer = () => {
                                 <li><a href="#">Whitepaper</a></li>
                             </ul>
                         </div>
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col miniMoblie:px-0 px-[28px]'>
                             <div className="title">LEGALS</div>
                             <div className="flex content-list">
                                 <ul>

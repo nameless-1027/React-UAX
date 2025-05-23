@@ -5,6 +5,7 @@ import { ThemeProvider } from './context/themeContext';
 import { Header } from './components/layout/header';
 import { Home } from './pages/home';
 import { Roadmap } from './pages/roadmap';
+import { Portal } from './pages/portal';
 import { Footer } from './components/layout/footer';
 
 import ScrollToTopButton from './components/common/scrollTop';
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="/*" element={<Portal />} />
         </Routes>
         <Theme />
         <ScrollToTopButton />

@@ -1,0 +1,87 @@
+.heading {
+    background: url(../media/layout/top-back.png) 0 0 no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 50%;
+}
+
+.portal .box {
+    /* border-width: 0.5px;
+    border-style: solid;
+    border-image: linear-gradient(135deg, #F9F9F9, #FFFFFF0A);
+    border-image-slice: 1;
+    background-clip: border-box; */
+    border: 0.5px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--box-image);
+    margin-top: 19px;
+}
+
+.portal .box .head {
+    padding: 25px 0 25px 37px;
+    border-bottom: 0.5px solid var(--border-color);
+}
+
+.portal .box .main {
+    padding: 28px 0 28px 37px;
+}
+
+.portal .head h5 {
+    font-family: Inter;
+    color: #CE1FEA;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0;
+}
+
+.portal .main .Nr {
+    display: inline-block;
+    width: 29px;
+    height: 37px;
+    margin: 0 2px;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--text-color);
+    border-radius: 2px;
+    background-color: var(--menu-color);
+    border: 1px solid var(--menu-border-reverse);
+}
+
+.portal .chart-panel>div {
+    border: 0.5px solid var(--border-color);
+    margin-top: 22px;
+    border-radius: 10px;
+    padding: 23px 44px;
+    background-color: var(--box-bg);
+}
+
+.portal .chart-panel .chart-state-field>p {
+    color: var(--text-color);
+}
+
+.portal .chart-panel .chart-state-field .state {
+    border: 1px solid var(--border-color);
+    padding: 5px 8px;
+    border-radius: 40px;
+}
+
+.portal .chart-panel .chart-state-field .state>span {
+    color: var(--content-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 29px;
+    height: 29px;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+.portal .chart-panel .chart-state-field .state>.active {
+    background: #CE1FEA;
+    color: #fff;
+}

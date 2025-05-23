@@ -178,8 +178,6 @@
 }
 
 @media screen and (max-width: 640px) {
-
-
     .container {
         max-width: 540px;
     }
@@ -224,6 +222,12 @@
 
     .flat-toggle {
         padding: 16px 38px 14px 22px;
+    }
+
+    .portal .chart-panel .chart-state-field .state>span {
+        width: 16px;
+        height: 16px;
+        font-size: 11px;
     }
 
 }
