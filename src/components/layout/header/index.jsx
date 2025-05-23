@@ -80,7 +80,7 @@ export const Header = () => {
                                     </AnimatePresence>
                                 </li>
                                 <li className='mr-[40px] lg:block hidden'>
-                                    <Link to="/roadmap">
+                                    <Link to="/usecases">
                                         Usecases
                                     </Link>
                                 </li>
@@ -90,17 +90,17 @@ export const Header = () => {
                                     </Link>
                                 </li>
                                 <li className='mr-[40px] lg:block hidden'>
-                                    <Link to="/roadmap">
+                                    <Link to="/faq">
                                         FAQ
                                     </Link>
                                 </li>
                                 <li className='lg:block hidden'>
-                                    <Link to="/roadmap">
+                                    <Link to="/whitepapper">
                                         Whitepaper
                                     </Link>
                                 </li>
                                 <li className='xl:ml-[100px] lg:ml-[80px] ml-[100px]  sm:block hidden'>
-                                    <a href="#" className='btn'>
+                                    <a href="/uaxdocs" className='btn'>
                                         Uax Docs
                                     </a>
                                 </li>
