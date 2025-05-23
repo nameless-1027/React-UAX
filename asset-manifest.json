@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-UAX/static/css/main.c25050f7.css",
-    "main.js": "/React-UAX/static/js/main.0fd8db13.js",
+    "main.css": "/React-UAX/static/css/main.05930f19.css",
+    "main.js": "/React-UAX/static/js/main.d6cee463.js",
     "static/js/845.d941f4fd.chunk.js": "/React-UAX/static/js/845.d941f4fd.chunk.js",
     "static/media/what-is-back-light.png": "/React-UAX/static/media/what-is-back-light.40bbb0f0fafb78fdc4ad.png",
     "static/media/rm-2.png": "/React-UAX/static/media/rm-2.b422e9065fad4e128d9c.png",
@@ -19,12 +19,12 @@
     "static/media/icomoon.woff?oe5mqk": "/React-UAX/static/media/icomoon.fb3a2871f26a61376d90.woff",
     "static/media/icomoon.ttf?oe5mqk": "/React-UAX/static/media/icomoon.866ccad977d3d2783dc6.ttf",
     "index.html": "/React-UAX/index.html",
-    "main.c25050f7.css.map": "/React-UAX/static/css/main.c25050f7.css.map",
-    "main.0fd8db13.js.map": "/React-UAX/static/js/main.0fd8db13.js.map",
+    "main.05930f19.css.map": "/React-UAX/static/css/main.05930f19.css.map",
+    "main.d6cee463.js.map": "/React-UAX/static/js/main.d6cee463.js.map",
     "845.d941f4fd.chunk.js.map": "/React-UAX/static/js/845.d941f4fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c25050f7.css",
-    "static/js/main.0fd8db13.js"
+    "static/css/main.05930f19.css",
+    "static/js/main.d6cee463.js"
   ]
 }
