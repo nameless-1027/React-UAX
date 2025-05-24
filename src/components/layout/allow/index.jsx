@@ -1,5 +1,7 @@
 import React from "react";
 
+import './style.css';
+
 export const Allow = () => {
     return (
         <div className="w-full pt-[150px] pb-[80px]">

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './style.css';
+
 export const EnterEmail = () => {
     return (
         <div className='enter-email'>

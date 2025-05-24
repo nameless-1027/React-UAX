@@ -12,8 +12,6 @@ import { Join } from "../../components/layout/join";
 import { Network } from "../../components/layout/network";
 import { Partner } from "../../components/layout/partner";
 
-import '../../assets/styles/home.css';
-
 
 export const Home = () => {
     return (

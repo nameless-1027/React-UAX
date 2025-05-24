@@ -4,6 +4,8 @@ import { ThemeContext } from '../../../context/themeContext';
 import { SectionTitle1 } from '../../common/sectionTitle1';
 import { datas } from '../../data';
 
+import './style.css';
+
 export const Glance = () => {
     const { theme } = useContext(ThemeContext);
     return (

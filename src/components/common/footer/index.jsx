@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../../context/themeContext';
 
 export const Footer = () => {
@@ -53,38 +54,38 @@ export const Footer = () => {
                             <div className="title">SITEMAP</div>
                             <div className="flex content-list">
                                 <ul>
-                                    <li><a href="/home">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Technology</a></li>
-                                    <li><a href="#">Run-a-node</a></li>
-                                    <li><a href="/metrices">Metrices</a></li>
+                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="#">About Us</Link></li>
+                                    <li><Link to="/innovative">Technology</Link></li>
+                                    <li><Link to="#">Run-a-node</Link></li>
+                                    <li><Link to="/metrices">Metrices</Link></li>
                                 </ul>
                             </div>
                         </div>
                         <div className=' miniMoblie:px-0 px-[28px]'>
                             <ul className='pt-[20px]'>
-                                <li><a href="#">Presskit</a></li>
-                                <li><a href="/roadmap">Roadmap</a></li>
-                                <li><a href="#">Tokenomics</a></li>
-                                <li><a href="#">Whitepaper</a></li>
-                                <li><a href="/podcasts">Podcast</a></li>
+                                <li><Link to="#">Presskit</Link></li>
+                                <li><Link to="/roadmap">Roadmap</Link></li>
+                                <li><Link to="#">Tokenomics</Link></li>
+                                <li><Link to="#">Whitepaper</Link></li>
+                                <li><Link to="/podcasts">Podcast</Link></li>
                             </ul>
                         </div>
                         <div className=' miniMoblie:px-0 px-[28px]'>
                             <ul className='pt-[20px]'>
-                                <li><a href="#">Governance</a></li>
-                                <li><a href="#">DAO’s</a></li>
-                                <li><a href="#">Staking</a></li>
-                                <li><a href="#">Whitepaper</a></li>
+                                <li><Link to="#">Governance</Link></li>
+                                <li><Link to="#">DAO’s</Link></li>
+                                <li><Link to="#">Staking</Link></li>
+                                <li><Link to="#">Whitepaper</Link></li>
                             </ul>
                         </div>
                         <div className='flex flex-col miniMoblie:px-0 px-[28px]'>
                             <div className="title">LEGALS</div>
                             <div className="flex content-list">
                                 <ul>
-                                    <li><a href="#">Terms of Use</a></li>
-                                    <li><a href="#">Cookie Policy</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><Link to="#">Terms of Use</Link></li>
+                                    <li><Link to="#">Cookie Policy</Link></li>
+                                    <li><Link to="#">Privacy Policy</Link></li>
                                 </ul>
                             </div>
                         </div>

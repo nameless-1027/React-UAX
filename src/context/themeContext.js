@@ -7,12 +7,14 @@ export const ThemeProvider = ({ children }) => {
 
     useEffect(() => {
         const savedTheme = localStorage.getItem('app-theme');
-        savedTheme ? setTheme(savedTheme) : setTheme('light');
+        savedTheme ? setTheme(savedTheme) : setTheme('dark');
     }, []);
 
     useEffect(() => {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('app-theme', theme);
+        if (theme !== '') {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('app-theme', theme);
+        }
     }, [theme]);
 
     const toggleTheme = () => {

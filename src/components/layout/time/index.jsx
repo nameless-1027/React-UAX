@@ -2,6 +2,8 @@ import React from 'react';
 
 import { datas } from '../../data';
 
+import './style.css';
+
 export const Time = () => {
     return (
         <div className='w-full'>

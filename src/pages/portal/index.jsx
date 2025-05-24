@@ -4,8 +4,6 @@ import { Time } from '../../components/layout/time';
 import { ChartPanel } from '../../components/layout/chartPanel';
 import { Heading } from '../../components/layout/heading';
 
-import '../../assets/styles/portal.css';
-
 export const Portal = () => {
     return (
         <>

@@ -6,6 +6,8 @@ import { SectionTitle2 } from '../../common/sectionTitle2';
 
 import { datas } from '../../data';
 
+import './style.css';
+
 export const Globe = () => {
     const { theme } = useContext(ThemeContext);
     return (
@@ -14,7 +16,7 @@ export const Globe = () => {
                 <SectionTitle1 type={1} />
             </div>
             <div className='md:hidden flex flex-col w-full'>
-                <SectionTitle2 type={4} />
+                <SectionTitle2 type={4} image={'line'} />
             </div>
             <div className='w-full flex justify-between items-center pt-[80px] globe'>
                 <div className='md:flex hidden items-center px-[16px] w-[30%]'>

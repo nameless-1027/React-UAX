@@ -4,6 +4,8 @@ import { ThemeContext } from '../../../context/themeContext';
 
 import { datas } from '../../data';
 
+import './style.css';
+
 export const Offering = () => {
     const { theme } = useContext(ThemeContext);
     return (
@@ -35,7 +37,7 @@ export const Offering = () => {
                                         </i>
                                     </a>
                                 </div> */}
-                                <a href="#" class="text-[#b31bd8] font-[500] text-[18px]">Read more <i class="fa fa-long-arrow-right text-[#b31bd8]"></i></a>
+                                <a href="#" className="text-[#b31bd8] font-[500] text-[18px]">Read more <i className="fa fa-long-arrow-right text-[#b31bd8]"></i></a>
                             </div>
                             <div className="content-image">
                                 <img

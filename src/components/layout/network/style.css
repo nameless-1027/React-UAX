@@ -1,0 +1,54 @@
+.network #network {
+    background: url(../../../assets/media/border.png);
+    background-size: 68% 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 700px;
+    padding: 0 140px;
+}
+
+#network h6 {
+    line-height: 26px;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#network p {
+    line-height: 19px;
+    margin: 0;
+    color: var(--content-color);
+    font-size: 14px;
+}
+
+#network .box {
+    background-color: var(--box-bg);
+    border: 0.8px solid var(--box-border-color);
+    padding: 21px 21px 28px;
+    border-radius: 10px;
+    width: 350px;
+    position: relative;
+}
+
+#network .box-up {
+    top: 4%;
+    left: 37%;
+}
+
+#network .box-left {
+    top: 13%;
+    left: 2%;
+}
+
+#network .box-right {
+    float: right;
+    top: -3%;
+    right: 3%;
+}
+
+#network .box-bottom {
+    top: 28%;
+    left: 29%;
+}

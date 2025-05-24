@@ -1,0 +1,117 @@
+.content-inner .content {
+    width: 100%;
+}
+
+.content-inner .content .block-text .heading {
+    font-family: "Zen Dots", cursive;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--text-color);
+}
+
+.content-inner .content .block-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--content-color);
+}
+
+.content-inner .content .info {
+    padding: 43px 40px;
+    margin-top: 49px;
+    position: relative;
+    clip-path: polygon(0 28px, 28px 0, calc(100% - 28px) 0, 100% 28px, 100% calc(100% - 28px), calc(100% - 28px) 100%, 28px 100%, 0% calc(100% - 28px), 0% 28px);
+}
+
+.content-inner .content .info [class^=icon-union] {
+    position: absolute;
+    font-size: 68px;
+    transition: 0.3s all ease-in-out;
+}
+
+.content-inner .content .info [class^=icon-union]:nth-child(1) {
+    left: -1px;
+    top: -1px;
+}
+
+.content-inner .content .info [class^=icon-union]:nth-child(2) {
+    right: -1px;
+    top: -1px;
+}
+
+.content-inner .content .info [class^=icon-union]:nth-child(3) {
+    right: -1px;
+    bottom: -1px;
+}
+
+.content-inner .content .info [class^=icon-union]:nth-child(4) {
+    left: -1px;
+    bottom: -1px;
+}
+
+.content-inner .content .info .name {
+    font-family: "Zen Dots", cursive;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.content-inner .content .info .text {
+    font-size: 17px;
+    margin-top: 23px;
+    color: var(--content-color);
+}
+
+
+
+.flat-toggle {
+    background: var(--box-bg);
+    border-radius: 10px;
+    padding: 27px 38px 20px 32px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.flat-toggle .toggle-title {
+    text-transform: capitalize;
+    margin-bottom: 0;
+    position: relative;
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--text-color);
+}
+
+.flat-toggle .toggle-content {
+    margin-top: 18px;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-right: 10px;
+    /* display: none; */
+    color: var(--content-color);
+}
+
+.flat-toggle .toggle-content.block {
+    display: block;
+}
+
+.flat-toggle .toggle-title::after {
+    font-family: "icomoon";
+    content: "\e900";
+    color: var(--text-color);
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100%, 0);
+    transition: 0.3s all ease-in-out;
+}
+
+.flat-toggle#active .toggle-title::after {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,60 @@
+.offering .document-box {
+    background-color: var(--box-bg);
+    background-image: none;
+    border-radius: 16px;
+    margin: 12px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 47px 0 0 84px;
+    width: 100%;
+    height: 230px;
+    border: 1px solid var(--box-border-color);
+}
+
+.offering .document-box .title {
+    margin-left: -47px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px !important;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.offering .document-box .content {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* height: 100%; */
+    flex: 1;
+    gap: 10px;
+}
+
+.offering .document-box .content .content-detail p {
+    font-size: 15px;
+    letter-spacing: 0;
+    font-weight: 400;
+    margin: 0 0 22px;
+    line-height: 1.45;
+}
+
+.offering .document-box .content .content-detail a.btn {
+    width: fit-content;
+    padding: 11px 40px;
+}
+
+.offering .document-box .content .content-image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    max-width: 120px;
+    min-width: 100px;
+}
+
+.offering .document-box .content .content-image img {
+    max-width: 105px;
+    border-bottom-right-radius: 16px !important;
+}

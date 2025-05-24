@@ -2,6 +2,8 @@ import React from 'react';
 
 import { datas } from '../../data';
 
+import './style.css';
+
 export const Network = () => {
     return (
         <div className='container mx-auto w-full pt-[60px] pb-[40px] network sm:block hidden'>

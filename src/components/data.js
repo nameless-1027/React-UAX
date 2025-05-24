@@ -99,6 +99,16 @@ export const datas = {
                 User-Even On
                 <span> Privacy</span>-Conscious Browsers.
             </p>
+        },
+        {
+            title:
+                <h1 className='text-center text-[32px]'>
+                    <span className='text-[#7D4689]'>Explore </span>UAX
+                </h1>,
+            content:
+                <p className='text-[15px] text-center max-w-[460px] line-height-[1.45]'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
         }
     ],
     glance: [
@@ -126,8 +136,8 @@ export const datas = {
             label: "Legal",
             value: "5%"
         }
-    ]
-    , global: [
+    ],
+    global: [
         {
             src: "https://images.uaxdlts.com/uax-landing/assets/images/icon/latest%20blocks.svg",
             alt: "Latest Blocks",
@@ -229,6 +239,52 @@ export const datas = {
             description: "Maximize your potential with UAX stake, empowering participation and growth within a vibrant decentralized network. Secure your future in the evolving landscape of decentralized finance with UAX.",
         },
     ],
+    faq: [
+        {
+            title: 'What is UAXnetwork?',
+            content: `  UAX is an ecosystem built to bridge the digital and physical worlds
+                        through
+                        blockchain. It helps people create, manage, and exchange real value —
+                        from
+                        digital assets to NFTs- while staying in full control.`
+        },
+        {
+            title: 'How does staking work on UAX.network?',
+            content: `  Staking on UAXnetwork is pretty simple, as you need to stake $500 worth
+                            of UAXN coins and lock them for at least 1 year to gain trust. It's a
+                            way to support the network and get something back without actively
+                            trading. In this case, you act as a validator. The longer you validate
+                            coins, the better the returns. And yeah, it’s all handled securely in
+                            the background.`
+        },
+        {
+            title: 'Can I withdraw UAXN coins during staking?',
+            content: `   No, you cannot withdraw or move the coins during
+                            the first year of staking as it is part of UAX's policy.NETWORK.`
+        },
+        {
+            title: 'What are the benefits of using UAXN coins?',
+            content: `  UAXN coins are your key to doing stuff inside the
+                            UAX.NETWORK — from trading and staking to minting NFTs. Holding UAXN
+                            gives you some perks, like lower fees, early access to new features, and
+                            participation in UAX's governance decisions.`
+        },
+        {
+            title: 'How is data stored and managed on UAX?NETWORK?',
+            content: `  Everything on UAX is saved using AISI (Artificial
+                            Intelligence Smart Integration) and stored in secure and
+                            blockchain-optimized servers. Further, they're spread across the chains,
+                            making it safe and fully transparent.`
+        },
+        {
+            title: 'What are the transaction fees on UAX.network?',
+            content: `  Only 212 Bandwidth per transaction is the smallest
+                            fee you are supposed to pay at UAX.NETWORK. This small amount is being
+                            charged to help the validators and to power the network. The fees ensure
+                            the blockchain is secure and the required computational power is
+                            provided to the ecosystem.`
+        },
+    ],
     heading: [
         {
             title:
@@ -243,6 +299,14 @@ export const datas = {
                 <h1 className="text-center text-[50px] font-semibold mb-4">
                     UAX
                     <span className="text-[#9B07B3]"> Podcasts</span>
+                </h1>,
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore'
+        },
+        {
+            title:
+                <h1 className="text-center text-[50px] font-semibold mb-4">
+                    Innovative
+                    <span className="text-[#9B07B3]"> Technology</span>
                 </h1>,
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore'
         },

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './style.css';
+
 export const SomeContent = () => {
     return (
         <div className='w-full'>

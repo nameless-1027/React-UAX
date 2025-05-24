@@ -9,6 +9,7 @@ import { Home } from './pages/home';
 import { Roadmap } from './pages/roadmap';
 import { Portal } from './pages/portal';
 import { Podcasts } from './pages/podcasts';
+import { Innovative } from './pages/innovative';
 
 import ScrollToTopButton from './components/common/scrollTop';
 import Theme from './components/common/theme';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/metrices" element={<Portal />} />
           <Route path="/podcasts" element={<Podcasts />} />
+          <Route path="/innovative" element={<Innovative />} />
         </Routes>
         <Theme />
         <ScrollToTopButton />

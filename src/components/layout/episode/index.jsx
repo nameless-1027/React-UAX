@@ -2,6 +2,8 @@ import React from 'react';
 
 import { datas } from '../../data';
 
+import './style.css';
+
 export const Episode = () => {
     return (
         <div className='w-full'>
@@ -9,7 +11,7 @@ export const Episode = () => {
                 <div className='xl:px-[60px] px-0 flex flex-wrap justify-between episode'>
                     <div className="w-full text-center mb-[50px] head">
                         <h1 className="text-center text-[32px] font-semibold">
-                            <span class="text-[#9B07B3]">Latest </span>
+                            <span className="text-[#9B07B3]">Latest </span>
                             Episodes
                         </h1>
                     </div>

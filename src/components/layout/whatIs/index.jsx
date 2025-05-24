@@ -2,6 +2,8 @@ import React from 'react';
 
 import { SectionTitle2 } from '../../common/sectionTitle2';
 
+import './style.css';
+
 export const WhatIs = () => {
     return (
         <div className='flex flex-col container mx-auto sm:px-[38px] px-[16px] py-[15px] what-is'>

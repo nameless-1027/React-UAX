@@ -3,6 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import { SectionTitle2 } from '../../common/sectionTitle2';
 
+import { datas } from '../../data';
+
+import './style.css';
+
 export const FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
@@ -13,142 +17,30 @@ export const FAQ = () => {
 
     return (
         <div className='flex flex-col container mx-auto lg:px-[130px] px-[32px] py-[40px]'>
-            <SectionTitle2 type={2} />
+            <SectionTitle2 type={2} image={'dot'} />
             <div className="max-w-[926px] mt-[40px] w-full mx-auto content-inner flat-accordion">
-                <div
-                    className="flat-toggle"
-                    id={activeIndex === 0 ? 'active' : ''}
-                    onClick={() => toggleContent(0)}
-                >
-                    <h5 className="toggle-title">What is UAXnetwork?</h5>
-                    <AnimatePresence>
-                        {activeIndex === 0 && <motion.p
-                            className='toggle-content'
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: 'auto' }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.3 }}
+                {
+                    datas.faq.map((_itm, _idx) => (
+                        <div
+                            className="flat-toggle"
+                            id={activeIndex === _idx ? 'active' : ''}
+                            onClick={() => toggleContent(_idx)}
                         >
-                            UAX is an ecosystem built to bridge the digital and physical worlds
-                            through
-                            blockchain. It helps people create, manage, and exchange real value —
-                            from
-                            digital assets to NFTs- while staying in full control.
-                        </motion.p>}
-                    </AnimatePresence>
-                </div>
-
-                <div
-                    className="flat-toggle"
-                    id={activeIndex === 1 ? 'active' : ''}
-                    onClick={() => toggleContent(1)}
-                >
-                    <h5 className="toggle-title">How does staking work on UAX.network?</h5>
-                    <AnimatePresence>
-                        {activeIndex === 1 && <motion.p
-                            className='toggle-content'
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: 'auto' }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            Staking on UAXnetwork is pretty simple, as you need to stake $500 worth
-                            of UAXN coins and lock them for at least 1 year to gain trust. It's a
-                            way to support the network and get something back without actively
-                            trading. In this case, you act as a validator. The longer you validate
-                            coins, the better the returns. And yeah, it’s all handled securely in
-                            the background.
-                        </motion.p>}
-                    </AnimatePresence>
-                </div>
-                <div
-                    className="flat-toggle"
-                    id={activeIndex === 2 ? 'active' : ''}
-                    onClick={() => toggleContent(2)}
-                >
-                    <h5 className="toggle-title">Can I withdraw UAXN coins during staking?</h5>
-                    <AnimatePresence>
-                        {activeIndex === 2 && <motion.p
-                            className='toggle-content'
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: 'auto' }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            No, you cannot withdraw or move the coins during
-                            the first year of staking as it is part of UAX's policy.NETWORK.
-                        </motion.p>}
-                    </AnimatePresence>
-                </div>
-
-                <div
-                    className="flat-toggle"
-                    id={activeIndex === 3 ? 'active' : ''}
-                    onClick={() => toggleContent(3)}
-                >
-                    <h5 className="toggle-title">What are the benefits of using UAXN coins?</h5>
-                    <AnimatePresence>
-                        {activeIndex === 3 && <motion.p
-                            className='toggle-content'
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: 'auto' }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            UAXN coins are your key to doing stuff inside the
-                            UAX.NETWORK — from trading and staking to minting NFTs. Holding UAXN
-                            gives you some perks, like lower fees, early access to new features, and
-                            participation in UAX's governance decisions.
-                        </motion.p>}
-                    </AnimatePresence>
-                </div>
-
-
-
-                <div
-                    className="flat-toggle"
-                    id={activeIndex === 4 ? 'active' : ''}
-                    onClick={() => toggleContent(4)}
-                >
-                    <h5 className="toggle-title">How is data stored and managed on UAX?NETWORK?</h5>
-                    <AnimatePresence>
-                        {activeIndex === 4 && <motion.p
-                            className='toggle-content'
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: 'auto' }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            Everything on UAX is saved using AISI (Artificial
-                            Intelligence Smart Integration) and stored in secure and
-                            blockchain-optimized servers. Further, they're spread across the chains,
-                            making it safe and fully transparent.
-                        </motion.p>}
-                    </AnimatePresence>
-                </div>
-
-                <div
-                    className="flat-toggle"
-                    id={activeIndex === 5 ? 'active' : ''}
-                    onClick={() => toggleContent(5)}
-                >
-                    <h5 className="toggle-title">What are the transaction fees on UAX.network?</h5>
-                    <AnimatePresence>
-                        {activeIndex === 5 && <motion.p
-                            className='toggle-content'
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: 'auto' }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            Only 212 Bandwidth per transaction is the smallest
-                            fee you are supposed to pay at UAX.NETWORK. This small amount is being
-                            charged to help the validators and to power the network. The fees ensure
-                            the blockchain is secure and the required computational power is
-                            provided to the ecosystem.
-                        </motion.p>}
-                    </AnimatePresence>
-                </div>
+                            <h5 className="toggle-title">{_itm.title}</h5>
+                            <AnimatePresence>
+                                {activeIndex === _idx && <motion.p
+                                    className='toggle-content'
+                                    initial={{ opacity: 0, height: 0 }}
+                                    animate={{ opacity: 1, height: 'auto' }}
+                                    exit={{ opacity: 0, height: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    {_itm.content}
+                                </motion.p>}
+                            </AnimatePresence>
+                        </div>
+                    ))
+                }
 
             </div>
         </div>

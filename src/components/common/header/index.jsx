@@ -23,7 +23,7 @@ export const Header = () => {
                             width={130}
                         />
                         <nav>
-                            {/* <ul className='flex items-center'>
+                            <ul className='flex items-center'>
                                 <li className='mr-[40px] lg:block hidden'><Link to="/">Home</Link></li>
                                 <li
                                     className='mr-[40px]  py-[30px] lg:block hidden'
@@ -97,43 +97,6 @@ export const Header = () => {
                                 <li className='lg:block hidden'>
                                     <Link to="/whitepapper">
                                         Whitepaper
-                                    </Link>
-                                </li>
-                                <li className='xl:ml-[100px] lg:ml-[80px] ml-[100px]  sm:block hidden'>
-                                    <a href="/uaxdocs" className='btn'>
-                                        Uax Docs
-                                    </a>
-                                </li>
-                                <li className='lg:hidden block'>
-                                    <div
-                                        className="mobile-button"
-                                        id={isMobileMenuOpen ? 'active' : ''}
-                                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                                    >
-                                        <span />
-                                    </div>
-                                </li>
-                            </ul> */}
-                            <ul className='flex items-center'>
-                                <li className='mr-[40px] lg:block hidden'><Link to="/">Home</Link></li>
-                                <li className='mr-[40px] lg:block hidden'>
-                                    <Link to="/metrices ">
-                                        Metrices
-                                    </Link>
-                                </li>
-                                <li className='mr-[40px] lg:block hidden'>
-                                    <Link to="/roadmap">
-                                        Roadmap
-                                    </Link>
-                                </li>
-                                <li className='mr-[40px] lg:block hidden'>
-                                    <Link to="/podcasts">
-                                        Podcasts
-                                    </Link>
-                                </li>
-                                <li className='lg:block hidden'>
-                                    <Link to="/innovative">
-                                        Innovative
                                     </Link>
                                 </li>
                                 <li className='xl:ml-[100px] lg:ml-[80px] ml-[100px]  sm:block hidden'>

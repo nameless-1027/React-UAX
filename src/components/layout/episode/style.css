@@ -1,0 +1,16 @@
+.episode .box .title {
+    color: var(--text-color);
+}
+
+.episode .box .title,
+.episode .box .date {
+    line-height: 1;
+}
+
+.episode .box .video::after {
+    content: url('../../../assets/media/podcates/player.png');
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+}

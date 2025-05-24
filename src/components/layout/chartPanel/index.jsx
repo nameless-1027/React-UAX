@@ -4,6 +4,8 @@ import { State } from "./state";
 import { LineChart } from "./draw/line";
 import { BarChart } from "./draw/bar";
 
+import './style.css';
+
 import {
     Chart as ChartJS,
     CategoryScale,      // ✅ Needed for x-axis category labels

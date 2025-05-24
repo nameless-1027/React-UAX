@@ -1,0 +1,44 @@
+.globe .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 29px 30px 27px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    margin: 18px 0;
+}
+
+.globe .box-title {
+    margin-bottom: 10px;
+}
+
+.globe .box-title a {
+    font-weight: 500;
+}
+
+.globe .box-content span {
+    color: #CE1FEA;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.globe .boxes .box:nth-child(1) {
+    background: url('../../../assets/media/globe/back1.png') no-repeat center center;
+    background-size: cover;
+}
+
+.globe .boxes .box:nth-child(2) {
+    background: url('../../../assets/media/globe/back2.png') no-repeat center center;
+    background-size: cover;
+}
+
+.globe .boxes .box:nth-child(3) {
+    background: url('../../../assets/media/globe/back3.png') no-repeat center center;
+    background-size: cover;
+}
+
+.globe .boxes .box:nth-child(4) {
+    background: url('../../../assets/media/globe/back4.png') no-repeat center center;
+    background-size: cover;
+}

@@ -6,8 +6,6 @@ import { SomeContent } from '../../components/layout/someContent';
 import { Join } from '../../components/layout/join';
 import { EnterEmail } from '../../components/layout/enterEmail';
 
-import '../../assets/styles/podcasts.css';
-
 export const Podcasts = () => {
     return (
         <>
