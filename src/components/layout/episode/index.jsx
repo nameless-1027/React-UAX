@@ -8,7 +8,7 @@ export const Episode = () => {
     return (
         <div className='w-full'>
             <div className='container mx-auto xl:px-[80px] xl:py-[45px] lg:px-[40px] lg:py-[24px] px-[16px] py-[12px]'>
-                <div className='xl:px-[60px] px-0 flex flex-wrap justify-between episode'>
+                <div className='xl:px-[10px] px-0 flex flex-wrap justify-between episode'>
                     <div className="w-full text-center mb-[50px] head">
                         <h1 className="text-center text-[32px] font-semibold">
                             <span className="text-[#9B07B3]">Latest </span>

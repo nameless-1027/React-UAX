@@ -1,0 +1,10 @@
+.explore .box>div {
+    background: var(--box-image);
+    padding: 36px 30px 36px 52px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.explore p {
+    line-height: 1.45;
+}

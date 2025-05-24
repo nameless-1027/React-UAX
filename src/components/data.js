@@ -482,5 +482,37 @@ export const datas = {
             title: 'Podcast #3 Blockchain',
             date: 'May 19, 2025'
         },
+    ],
+    explore: [
+        {
+            image: 'hybrid',
+            title: 'Hybrid Architecture',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
+        },
+        {
+            image: 'evm',
+            title: 'EVM Compatibility',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
+        },
+        {
+            image: 'smart',
+            title: 'Low-Code Smart Contract',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
+        },
+        {
+            image: 'innovations',
+            title: 'Innovations for the Real World',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
+        },
+        {
+            image: 'consensus',
+            title: 'Consensus & Security',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
+        },
+        {
+            image: 'scalability',
+            title: 'Scalability',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
+        },
     ]
 }

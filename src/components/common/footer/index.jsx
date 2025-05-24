@@ -8,7 +8,7 @@ export const Footer = () => {
 
     return (
         <div className='flex flex-col container mx-auto xl:px-[38px] px-[16px] pt-[46px] pb-[15px]'>
-            <div className='lg:xl:px-[80px] px-0'>
+            <div className='px-0'>
                 <div className='flex lg:flex-row flex-col lg:gap-[16px] gap-8 lg:justify-between justify-center sm:p-[68px] p-[36px] footer'>
                     <div className='flex flex-col footer-left'>
                         <img src={`media/logo/${theme}.png`} alt="logo" className='h-[32px] w-[117px] mb-[26px]' />

@@ -1,3 +1,4 @@
+/* Banner Section */
 .banner {
     background-image: url('../../../assets/media/main-image/first-bg.png');
     background-size: cover;
@@ -6,6 +7,7 @@
     padding: 200px 32px 80px;
 }
 
+/* Banner Title */
 .banner h2.title {
     font-size: 38px;
     line-height: 46px;
@@ -16,12 +18,14 @@
     color: var(--text-color);
 }
 
+/* Title Span Effect */
 .banner h2.title span {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--text-color);
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
+/* Content List Items */
 .content li::after {
     content: "";
     width: 2px;
@@ -36,6 +40,7 @@
     display: none;
 }
 
+/* Globe Boxes Layout */
 .globe .boxes {
     display: flex;
     flex-wrap: wrap;

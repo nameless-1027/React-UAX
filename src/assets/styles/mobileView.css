@@ -1,16 +1,17 @@
+/* Desktop and Large Screens */
 @media screen and (min-width: 1024px) {
     header .main-nav {
         display: none;
     }
 }
 
-@media screen and (min-width : 1280px) {
+@media screen and (min-width: 1280px) {
     .road-map .road-map-main {
         padding: 0 171px;
     }
 }
 
-@media screen and (min-width : 1440px) {
+@media screen and (min-width: 1440px) {
     .container {
         max-width: 1440px !important;
     }
@@ -20,7 +21,8 @@
     }
 }
 
-@media screen and (max-width:1440px) {
+/* Large Screens */
+@media screen and (max-width: 1440px) {
     .allow .numbers {
         padding: 51px 80px 0 90px;
     }
@@ -30,6 +32,7 @@
     }
 }
 
+/* Medium Screens */
 @media screen and (max-width: 1280px) {
     .network #network {
         padding: 0 32px;
@@ -48,25 +51,10 @@
     }
 }
 
+/* Tablets and Small Laptops */
 @media screen and (max-width: 1024px) {
     #network .box {
         width: 250px;
-    }
-
-    .road-map .road-map-main .box-roadmap.left::after {
-        right: -111px;
-    }
-
-    .road-map .road-map-main .box-roadmap.right::after {
-        left: -111px;
-    }
-
-    .road-map .road-map-main .box-roadmap.left::before {
-        right: -78px;
-    }
-
-    .road-map .road-map-main .box-roadmap.right::before {
-        left: -78px;
     }
 
     .network #network {
@@ -88,39 +76,50 @@
     .wallet-small-text {
         font-size: 8px;
     }
+
+    /* Roadmap connectors */
+    .road-map .road-map-main .box-roadmap.left::after {
+        right: -111px;
+    }
+
+    .road-map .road-map-main .box-roadmap.right::after {
+        left: -111px;
+    }
+
+    .road-map .road-map-main .box-roadmap.left::before {
+        right: -78px;
+    }
+
+    .road-map .road-map-main .box-roadmap.right::before {
+        left: -78px;
+    }
 }
 
-@media screen and (max-width:875px) {
+/* Landscape Tablets */
+@media screen and (max-width: 875px) {
+    .road-map .road-map-main {
+        justify-content: flex-start;
+        gap: 12px;
+    }
 
+    .road-map .road-map-main .box-roadmap {
+        margin: 0 0 30px;
+    }
 
     .road-map .road-map-main .box-roadmap::before,
     .road-map .road-map-main .box-roadmap::after {
         display: none;
     }
 
-    .road-map .road-map-main .box-roadmap.left,
-    .road-map .road-map-main .box-roadmap.right {
-        margin: 0 0 30px;
-    }
-
-    .road-map .road-map-main {
-        justify-content: flex-start;
-    }
-
-    .road-map .road-map-main {
-        gap: 12px;
-    }
-
     .road-map .road-map-main::before,
     .road-map .road-map-main::after {
         left: 100%;
     }
-
 }
 
+/* Tablets */
 @media screen and (max-width: 767px) {
-
-    .banner>div {
+    .banner > div {
         background-image: url('../media/network_opacity.png');
         background-position: center center;
         background-size: contain;
@@ -132,7 +131,7 @@
         margin: 0;
     }
 
-    .what-is .box>div {
+    .what-is .box > div {
         padding: 14px 70px;
     }
 
@@ -150,7 +149,7 @@
     }
 
     .some-content {
-        padding: 32px 42px;
+        padding: 32px 42px !important;
     }
 
     #join-btn {
@@ -158,30 +157,13 @@
         padding: 14px 18px;
     }
 
-    /* .footer {
-        width: 100%;
-    }
-
-    .footer h6 {
-        font-size: 16px;
-    }
-
-    .footer .join-btn {
-        padding: 8px 14px;
-    }
-
-    .footer input {
-        padding: 9px 25px;
-        border-radius: 6px;
-    } */
-
-    .footer .footer-right>div {
+    .footer .footer-right > div {
         width: 50%;
         margin-top: 36px;
     }
-    
 }
 
+/* Large Mobile */
 @media screen and (max-width: 640px) {
     .container {
         max-width: 540px;
@@ -209,6 +191,10 @@
         display: block;
     }
 
+    .flat-toggle {
+        padding: 16px 38px 14px 22px;
+    }
+
     .flat-toggle .toggle-title {
         font-size: 18px;
     }
@@ -225,18 +211,14 @@
         padding: 32px 48px 16px;
     }
 
-    .flat-toggle {
-        padding: 16px 38px 14px 22px;
-    }
-
-    .portal .chart-panel .chart-state-field .state>span {
+    .portal .chart-panel .chart-state-field .state > span {
         width: 16px;
         height: 16px;
         font-size: 9px;
     }
-
 }
 
+/* Mobile */
 @media screen and (max-width: 480px) {
     .globe .box {
         width: 100%;
@@ -246,7 +228,6 @@
     .what-is .box-title h3 {
         font-size: 12px;
     }
-
 
     .offering .document-box .content .content-detail p {
         font-size: 12px;
@@ -273,10 +254,14 @@
     .footer .footer-left {
         width: 100%;
     }
+
+    .explore .box > div {
+        padding: 24px 20px 24px 34px !important;
+    }
 }
 
+/* Small Mobile */
 @media screen and (max-width: 380px) {
-
     .offering .document-box {
         padding: 34px 0 0 54px;
     }
@@ -285,7 +270,7 @@
         margin-left: -22px;
     }
 
-    .footer .footer-right>div {
+    .footer .footer-right > div {
         width: 100%;
         margin-top: 16px;
     }
