@@ -14,18 +14,19 @@ export const Network = () => {
             </h1>
             <div id="network">
                 {
-                    datas.network.map((data, idx) => <div className={`box box-${data.location}`} key={idx}>
-                        <div className="box-inner">
-                            <div className="detail">
-                                <div className="title">
-                                    <h6 className='text-[18px]'>{data.title}</h6>
-                                </div>
-                                <div className="content">
-                                    <p className='text-[14px] font-light mb-0'>{data.content}</p>
+                    datas.network.map((data, idx) =>
+                        <div className={`box box-${data.location}`} key={idx}>
+                            <div className="box-inner">
+                                <div className="detail">
+                                    <div className="title">
+                                        <h6 className='text-[18px]'>{data.title}</h6>
+                                    </div>
+                                    <div className="content">
+                                        <p className='text-[14px] font-light mb-0'>{data.content}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>)
+                        </div>)
                 }
             </div>
         </div>

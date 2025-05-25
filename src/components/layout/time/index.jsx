@@ -18,8 +18,8 @@ export const Time = () => {
                                     </div>
                                     <div className="flex items-end main">
                                         {
-                                            _time.Nr.split('').map((_nr, _id) =>
-                                                <span className='Nr' key={_id}>{_nr}</span>
+                                            _time.Nr.split('').map((_itm, _id) =>
+                                                <span className='Nr' key={_id}>{_itm}</span>
                                             )
                                         }
                                         {" "}

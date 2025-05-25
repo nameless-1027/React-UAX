@@ -1,0 +1,25 @@
+.kit .box>div {
+    background: var(--box-image);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.kit .box .head {
+    padding: 28px 39px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.kit .box .main {
+    padding: 43px 39px;
+}
+
+.kit .box .main .size{
+    color: var(--content-color);
+    margin: 7px 0;
+}
+
+.kit .box .main p {
+    line-height: 20px;
+    color: var(--text-color);
+}

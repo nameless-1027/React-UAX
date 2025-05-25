@@ -19,6 +19,7 @@ export const Episode = () => {
                         {
                             datas.episodes.map((_itm, _idx, _arr) =>
                                 <div
+                                    key={_idx}
                                     className={`mx-[16px] box 
                                         ${_idx + 1 === _arr.length ?
                                             'md:block hidden' :

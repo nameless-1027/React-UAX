@@ -25,6 +25,7 @@ export const FAQ = () => {
                             className="flat-toggle"
                             id={activeIndex === _idx ? 'active' : ''}
                             onClick={() => toggleContent(_idx)}
+                            key={_idx}
                         >
                             <h5 className="toggle-title">{_itm.title}</h5>
                             <AnimatePresence>

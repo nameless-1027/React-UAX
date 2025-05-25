@@ -1,4 +1,5 @@
 import { steps } from "framer-motion";
+import { title } from "framer-motion/client";
 
 export const datas = {
     sectionTitle1: [
@@ -109,6 +110,14 @@ export const datas = {
                 <p className='text-[15px] text-center max-w-[460px] line-height-[1.45]'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </p>
+        },
+        {
+            title:
+                <h1 className='text-center text-[32px]'>
+                    <span className='text-[#7D4689]'>Files </span>for
+                    <span className='text-[#CE1FEA]'> Kit</span>
+                </h1>,
+            content: ''
         }
     ],
     glance: [
@@ -310,6 +319,14 @@ export const datas = {
                 </h1>,
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore'
         },
+        {
+            title:
+                <h1 className="text-center text-[50px] font-semibold mb-4">
+                    Press
+                    <span className="text-[#9B07B3]"> Kit</span>
+                </h1>,
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore'
+        }
     ],
     times: [
         {
@@ -513,6 +530,32 @@ export const datas = {
             image: 'scalability',
             title: 'Scalability',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
+        },
+    ],
+    kit: [
+        {
+            img: 'logo/dark.png',
+            formater: 'SVG',
+            type: 'LOGO',
+            size: '144',
+            description: `Lorem ipsum dolor sit amet, consec tetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+        },
+        {
+            img: 'uax favicon.png',
+            formater: 'SVG',
+            type: 'UAX Symbol',
+            size: '212',
+            description: `Lorem ipsum dolor sit amet, consec tetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+        },
+        {
+            img: 'logo/dark.png',
+            formater: 'PNG',
+            type: 'LOGO',
+            size: '144',
+            description: `Lorem ipsum dolor sit amet, consec tetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
         },
     ]
 }

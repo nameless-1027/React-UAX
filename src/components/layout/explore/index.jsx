@@ -17,7 +17,7 @@ export const Explore = () => {
                         <div className="flex flex-wrap w-full boxs">
                             {
                                 datas.explore.map((_itm, _idx) => (
-                                    <div className="p-[13px] xl:w-1/3 md:w-1/2 w-full box">
+                                    <div key={_idx} className="p-[13px] xl:w-1/3 md:w-1/2 w-full box">
                                         <div className='w-full flex flex-col items-start'>
                                             <h6 className='flex mb-[24px] text-[#CE1FEA]'>
                                                 <span className='mr-[2px]'>
