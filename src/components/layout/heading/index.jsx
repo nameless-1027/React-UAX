@@ -9,7 +9,7 @@ export const Heading = ({ type }) => {
         <div className="w-full heading">
             <div className='flex flex-col sm:pt-[222px] pt-[180px] sm:pb-[120px] pb-[80px] px-6 w-fit mx-auto'>
                 {datas.heading[type - 1].title}
-                <p className='text-wrap text-center'>{datas.heading[type - 1].content}</p>
+                <p className='text-wrap text-center max-w-[780px] font-light'>{datas.heading[type - 1].content}</p>
             </div>
         </div>
     )

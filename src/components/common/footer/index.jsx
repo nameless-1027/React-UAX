@@ -84,9 +84,9 @@ export const Footer = () => {
                             <div className="title">LEGALS</div>
                             <div className="flex content-list">
                                 <ul>
-                                    <li><Link to="#">Terms of Use</Link></li>
+                                    <li><Link to="/terms">Terms of Use</Link></li>
                                     <li><Link to="#">Cookie Policy</Link></li>
-                                    <li><Link to="#">Privacy Policy</Link></li>
+                                    <li><Link to="/privacy">Privacy Policy</Link></li>
                                 </ul>
                             </div>
                         </div>

@@ -101,6 +101,17 @@ export const datas = {
                     governance
                 </h1>,
         },
+        {
+            image: "media/glance/Group.png",
+            size: 'w-2 h-24',
+            title:
+                <h1 className="small font-normal">
+                    <span className='text-[#7D4689]'>How </span>
+                    We
+                    <span className='text-[#CE1FEA]'> Use</span><br />
+                    Cookies
+                </h1>,
+        },
     ],
     sectionTitle2: [
         {
@@ -438,6 +449,15 @@ export const datas = {
                     Organizations
                 </h1>,
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elite'
+        },
+        {
+            title:
+                <h1 className="text-center text-[50px] font-semibold mb-4">
+                    Privacy
+                    <span className="text-[#CE1FEA]"> Policy</span>
+                </h1>,
+            content: `This privacy notice explains how we at UAX.NETWORK (referred to as "we," "us," or "our") collects, uses, 
+                        and utilize your personal information when you use our website.`
         },
     ],
     times: [
@@ -788,6 +808,27 @@ export const datas = {
         {
             title: 'Centralized exchanges',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ',
+        },
+    ],
+    privacyConcept: [
+        'privacy',
+        'information'
+    ],
+    privacyInvolve: [
+        {
+            list:
+                [
+                    'cookie',
+                    'howUse',
+                    'sharing',
+                    'option',
+                    'security',
+                    'coppa',
+                    'california',
+                    'resident',
+                    'change',
+                    'contact',
+                ]
         },
     ]
 }

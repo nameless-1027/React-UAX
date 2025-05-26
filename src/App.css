@@ -71,6 +71,10 @@ ul.question li::marker {
   color: #ce20ea;
 }
 
+ul.question.white li::marker {
+  color: #fff;
+}
+
 button.btn {
   border: none;
   background: #D90EFA;
