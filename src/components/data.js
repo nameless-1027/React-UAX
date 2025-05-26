@@ -112,6 +112,29 @@ export const datas = {
                     Cookies
                 </h1>,
         },
+        {
+            image: "media/glance/Group.png",
+            size: 'w-2 h-24',
+            title:
+                <h1 className="small font-normal">
+                    <span className='text-[#7D4689]'>Legal </span>
+                    Matters That <br />
+                    May
+                    <span className='text-[#CE1FEA]'> impact</span>
+                    Your <br />
+                    Account
+                </h1>,
+        },
+        {
+            image: "media/glance/Group.png",
+            size: 'w-2 h-24',
+            title:
+                <h1 className="small font-normal">
+                    <span className='text-[#7D4689]'>Mandatory </span>
+                    <span className='text-[#CE1FEA]'>Use</span><br />
+                    Agreement
+                </h1>,
+        },
     ],
     sectionTitle2: [
         {
@@ -458,6 +481,14 @@ export const datas = {
                 </h1>,
             content: `This privacy notice explains how we at UAX.NETWORK (referred to as "we," "us," or "our") collects, uses, 
                         and utilize your personal information when you use our website.`
+        },
+        {
+            title:
+                <h1 className="text-center text-[50px] font-semibold mb-4">
+                    Terms
+                    <span className="text-[#9B07B3]"> & </span>
+                    <span className="text-[#CE1FEA]">Conditions</span>
+                </h1>
         },
     ],
     times: [
@@ -830,5 +861,27 @@ export const datas = {
                     'contact',
                 ]
         },
+    ],
+    terms: [
+        'aboutTerms',
+        'notice',
+        'agreement',
+        'p2p',
+        'account',
+    ],
+    termList: [
+        { list: ['legal'] },
+        {
+            list: [
+                'mandatory',
+                'noGuarantees',
+                'operational',
+                'suspension',
+                'prohibited',
+                'force',
+                'jurisdiction',
+                'entire',
+            ]
+        }
     ]
 }
