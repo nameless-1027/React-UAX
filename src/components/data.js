@@ -490,6 +490,15 @@ export const datas = {
                     <span className="text-[#CE1FEA]">Conditions</span>
                 </h1>
         },
+        {
+            title:
+                <h1 className="text-center text-[50px] font-semibold mb-4">
+                    Cookie
+                    <span className="text-[#CE1FEA]"> Policy</span>
+                </h1>,
+            content: `This privacy notice explains how we at UAX.NETWORK (referred to as "we," "us," or "our") collects, uses, 
+                        and utilize your personal information when you use our website.`
+        },
     ],
     times: [
         {
@@ -862,6 +871,27 @@ export const datas = {
                 ]
         },
     ],
+    cookieConcept: [
+        'privacy',
+        'information'
+    ],
+    cookieInvolve: [
+        {
+            list:
+                [
+                    'cookie',
+                    'howUse',
+                    'sharing',
+                    'option',
+                    'security',
+                    'coppa',
+                    'california',
+                    'resident',
+                    'change',
+                    'contact',
+                ]
+        },
+    ],
     terms: [
         'aboutTerms',
         'notice',
@@ -888,27 +918,111 @@ export const datas = {
         {
             image: 'explore',
             title: 'Explore',
-            content : 'Learn about UAX'
+            content: 'Learn about UAX'
         },
         {
             image: 'usecases',
             title: 'Usecases',
-            content : 'Some content here'
+            content: 'Some content here'
         },
         {
             image: 'tokenomics',
             title: 'Tokenomics',
-            content : 'Some content here'
+            content: 'Some content here'
         },
         {
             image: 'roadmap',
             title: 'Roadmap',
-            content : 'Some content here'
+            content: 'Some content here'
         },
         {
             image: 'wallet',
             title: 'Wallet',
-            content : 'Some content here'
+            content: 'Some content here'
         },
+    ],
+    footer: [
+        {
+            title: 'SITEMAP',
+            content: [
+                {
+                    path: '/',
+                    content: 'Home'
+                },
+                {
+                    path: '/',
+                    content: 'About Us'
+                },
+                {
+                    path: '/innovative',
+                    content: 'Technology'
+                },
+                {
+                    path: '/runnode',
+                    content: 'Run-a-node'
+                },
+                {
+                    path: '/metrices',
+                    content: 'Metrices'
+                },
+                {
+                    path: '/presskit',
+                    content: 'Presskit'
+                },
+                {
+                    path: '/roadmap',
+                    content: 'Roadmap'
+                },
+                {
+                    path: '/',
+                    content: 'Tokenomics'
+                },
+                {
+                    path: '/',
+                    content: 'Whitepaper'
+                },
+                {
+                    path: '/podcasts',
+                    content: 'Podcast'
+                },
+                {
+                    path: '/governance',
+                    content: 'Governance'
+                },
+                {
+                    path: '/DAO',
+                    content: 'DAO’s'
+                },
+                {
+                    path: '/staking',
+                    content: 'Staking'
+                },
+                {
+                    path: '/',
+                    content: 'Whitepaper'
+                },
+                {
+                    path: '/future',
+                    content: 'Future'
+                },
+            ]
+        },
+        {
+            title: 'LEGALS',
+            content: [
+                {
+                    path: '/terms',
+                    content: 'Terms of Use'
+                },
+                {
+                    path: '/cookie',
+                    content: 'Cookie Policy'
+                },
+                {
+                    path: '/privacy',
+                    content: 'Privacy Policy'
+                },
+            ]
+        }
     ]
 }

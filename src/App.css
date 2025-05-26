@@ -444,6 +444,29 @@ header .dropdown>div .box {
   text-decoration: underline;
 }
 
+.footer .toggle-title {
+  font-size: 18px;
+}
+
+.footer .toggle-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.footer .toggle-list>a {
+  margin: 4px 0;
+  text-align: center;
+}
+
+.footer .flat-toggle {
+  margin-bottom: -14px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--text-color);
+  background: transparent;
+  padding: 12px 20px 10px 18px;
+}
+
 /* .footer h6 {
   font-weight: 400;
   font-size: 30px;

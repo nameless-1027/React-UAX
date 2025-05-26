@@ -18,6 +18,7 @@ import { DAO } from './pages/DAO';
 import { Staking } from './pages/staking';
 import { Terms } from './pages/terms';
 import { Privacy } from './pages/privacy';
+import { Cookie } from './pages/cookie';
 
 import ScrollToTopButton from './components/common/scrollTop';
 import Theme from './components/common/theme';
@@ -45,6 +46,7 @@ function App() {
           <Route path="/staking" element={<Staking />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/cookie" element={<Cookie />} />
         </Routes>
         <Theme />
         <ScrollToTopButton />

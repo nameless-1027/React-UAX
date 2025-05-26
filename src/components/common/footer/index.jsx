@@ -1,8 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+
+import { datas } from '../../data';
 import { ThemeContext } from '../../../context/themeContext';
 
 export const Footer = () => {
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    const toggleContent = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+        console.log(activeIndex);
+    };
 
     const { theme } = useContext(ThemeContext);
 
@@ -49,7 +58,7 @@ export const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className='flex md:gap-[41px] gap-0 lg:justify-between justify-center md:flex-nowrap flex-wrap footer-right'>
+                    <div className='md:gap-[41px] gap-0 lg:justify-between justify-center md:flex-nowrap flex-wrap lg:flex hidden footer-right'>
                         <div className='flex flex-col miniMoblie:px-0 px-[28px]'>
                             <div className="title">SITEMAP</div>
                             <div className="flex content-list">
@@ -85,12 +94,39 @@ export const Footer = () => {
                             <div className="flex content-list">
                                 <ul>
                                     <li><Link to="/terms">Terms of Use</Link></li>
-                                    <li><Link to="#">Cookie Policy</Link></li>
+                                    <li><Link to="/cookie">Cookie Policy</Link></li>
                                     <li><Link to="/privacy">Privacy Policy</Link></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+                    {
+                        datas.footer.map((_itm, _idx) => (
+                            <div
+                                className="flat-toggle lg:hidden block"
+                                id={activeIndex === _idx ? 'active' : ''}
+                                onClick={() => toggleContent(_idx)}
+                                key={_idx}
+                            >
+                                <h5 className="toggle-title">{_itm.title}</h5>
+                                <AnimatePresence>
+                                    {activeIndex === _idx && <motion.p
+                                        className='toggle-content'
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: 'auto' }}
+                                        exit={{ opacity: 0, height: 0 }}
+                                        transition={{ duration: 0.3 }}
+                                    >
+                                        <div className='toggle-list'>
+                                            {
+                                                _itm.content.map((_contentItm, _contentId) => <Link to={_contentItm.path} key={_contentId}>{_contentItm.content}</Link>)
+                                            }
+                                        </div>
+                                    </motion.p>}
+                                </AnimatePresence>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </div >

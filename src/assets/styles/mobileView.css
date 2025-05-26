@@ -242,6 +242,10 @@
     .staking-box .box {
         padding: 22px 26px;
     }
+
+    .footer .toggle-list {
+        grid-template-columns: auto auto;
+    }
 }
 
 /* Mobile */
@@ -250,6 +254,7 @@
     a.btn {
         padding: 8px 14px;
     }
+
     a.btn span {
         font-size: 14px;
     }
@@ -327,5 +332,9 @@
 
     .footer .footer-right li {
         margin-top: 12px;
+    }
+
+    .footer .toggle-list {
+        grid-template-columns: auto;
     }
 }
