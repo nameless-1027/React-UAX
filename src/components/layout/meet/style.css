@@ -1,0 +1,10 @@
+.meet .right>div {
+    padding: 60px;
+    background: #CE1FEA;
+    border-radius: 12px;
+}
+
+.meet .right>div,
+.meet .left>div {
+    min-height: 332px;
+}

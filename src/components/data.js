@@ -5,12 +5,14 @@ export const datas = {
     sectionTitle1: [
         {
             image: "media/lines/core1.png",
+            size: 'md:w-[14px] w-[10px] md:h-[180px] h-[100px]',
             title: <h1>
                 <span className='text-[#7D4689]'>Why</span><br />
                 <span className='text-[#CE1FEA]'>UAX </span>
                 is a<br />Game
                 <span className='text-[#B19DB9]'> Changer</span>
             </h1>,
+            semiTitle: <img src="media/lines/build.svg" className='md:block hidden' alt="build" />,
             content: <p className='text-[20px]'>
                 Monitors every action, message, and individual-even
                 <br />
@@ -19,9 +21,11 @@ export const datas = {
         },
         {
             image: "media/lines/core2.svg",
+            size: 'md:w-[14px] w-[10px] md:h-[180px] h-[100px]',
             title: <h1> <span className='text-[#7D4689]'>Core</span><br />
                 Offerings of<br /><span className='text-[#CE1FEA]'>UAX.Network</span>
             </h1>,
+            semiTitle: <img src="media/lines/build.svg" className='md:block hidden' alt="build" />,
             content: <p className='md:text-[20px] text-[14px] md:ml-[10px] ml-[30px]'>
                 Drives Web3 innovation: providing secure wallets,
                 real-time monitoring, seamless cross-chain connectivity, and NFTs.
@@ -29,10 +33,12 @@ export const datas = {
         },
         {
             image: "media/glance/Group.png",
+            size: 'md:w-[14px] w-[10px] md:h-[180px] h-[100px]',
             title: <h1>
                 <span className='text-[#CE1FEA]'>Tokenomics </span>
-                at a <br /><span><b className='text-[#7D4689]'>Glance</b></span>
+                at a <br /><span className='text-[#7D4689]'>Glance</span>
             </h1>,
+            semiTitle: <h6 className='text-[20px] font-bold'>Deflationary Mechanisms:</h6>,
             content: <p className='text-[16px] max-w-[460px]'>
                 Revenue Buybacks, Token Burns &amp;
                 Limited supply.
@@ -41,7 +47,63 @@ export const datas = {
                 Events &amp;
                 Advanced Analytics On The UAX Platform.
             </p>
-        }
+        },
+        {
+            image: "media/glance/Group.png",
+            size: 'w-2 h-24',
+            title:
+                <h1 className="small">
+                    <span className='text-[#CE1FEA]'>Tokenomics </span>
+                    at a <br /><span className='text-[#7D4689]'>Glance</span>
+                </h1>,
+            content: <p className='text-[16px] max-w-[550px]'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            </p>
+        },
+        {
+            image: 'media/lines/core1.png',
+            size: 'w-2 h-24',
+            title:
+                <h1 className="small font-normal">
+                    <span className='text-[#7D4689]'>Meet </span>
+                    The <br />Technology
+                    <span className='text-[#CE1FEA]'> Behind</span>
+                </h1>,
+            content: <p className='text-[19px] max-w-[550px]'>
+                UAX Represents a Groundbreaking Shift In Blockchain Technology, — Particularly In The Realm of Mining.
+            </p>
+        },
+        {
+            image: "media/glance/Group.png",
+            size: 'w-2 h-24',
+            title:
+                <h1 className="small font-normal">
+                    <span className='text-[#7D4689]'>Who </span>
+                    <span className='text-[#CE1FEA]'> Is</span><br />
+                    Involved ?
+                </h1>,
+        },
+        {
+            image: "media/glance/Group.png",
+            size: 'w-2 h-24',
+            title:
+                <h1 className="small font-normal">
+                    <span className='text-[#7D4689]'>Handling </span><br />
+                    Disagreements
+                </h1>,
+        },
+        {
+            image: "media/glance/Group.png",
+            size: 'w-2 h-24',
+            title:
+                <h1 className="small font-normal">
+                    <span className='text-[#7D4689]'>Beacon </span>
+                    <span className='text-[#CE1FEA]'> Chain</span><br />
+                    governance
+                </h1>,
+        },
     ],
     sectionTitle2: [
         {
@@ -118,7 +180,23 @@ export const datas = {
                     <span className='text-[#CE1FEA]'> Kit</span>
                 </h1>,
             content: ''
-        }
+        },
+        {
+            title:
+                <h1 className='text-center text-[32px]'>
+                    <span className='text-[#CE1FEA]'>The </span>
+                    Problem We're <br />
+                    <span className='text-[#7D4689]'> Solving</span>
+                </h1>,
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt '
+        },
+        {
+            title:
+                <h1 className='text-center text-[32px] lg:mt-[30px] mt-6'>
+                    <span className='text-[#7D4689]'>Latest </span>
+                    Updates
+                </h1>,
+        },
     ],
     glance: [
         {
@@ -326,7 +404,34 @@ export const datas = {
                     <span className="text-[#9B07B3]"> Kit</span>
                 </h1>,
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore'
-        }
+        },
+        {
+            title:
+                <h1 className="text-center text-[50px] font-semibold mb-4">
+                    Run
+                    <span className="text-[#9B07B3]"> an </span>UAX
+                    <span className="text-[#CE1FEA]"> Node</span>
+                </h1>,
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore'
+        },
+        {
+            title:
+                <h1 className="text-center text-[50px] font-semibold mb-4">
+                    Unlock
+                    <span className="text-[#9B07B3]"> The </span>
+                    Future of
+                    <span className="text-[#CE1FEA]"> Blockchain</span>
+                </h1>,
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore'
+        },
+        {
+            title:
+                <h1 className="text-center text-[50px] font-semibold mb-4">
+                    Governor
+                    <span className="text-[#CE1FEA]"> Guide</span>
+                </h1>,
+            content: 'How to participate in UAX Governance'
+        },
     ],
     times: [
         {
@@ -532,6 +637,41 @@ export const datas = {
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
         },
     ],
+    whyRun: [
+        {
+            image: 'secure',
+            title: 'Secure the network',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
+        },
+        {
+            image: 'support',
+            title: 'Support the ecosystem',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
+        },
+        {
+            image: 'earn',
+            title: 'Earn rewards',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et'
+        },
+    ],
+    solving: [
+        {
+            image: 'challenges',
+            title: 'Scalability Challenges',
+        },
+        {
+            image: 'fees',
+            title: 'High Fees',
+        },
+        {
+            image: 'usage',
+            title: 'High Power Usage',
+        },
+        {
+            image: 'volatility',
+            title: 'Volatility of Fees',
+        },
+    ],
     kit: [
         {
             img: 'logo/dark.png',
@@ -556,6 +696,44 @@ export const datas = {
             size: '144',
             description: `Lorem ipsum dolor sit amet, consec tetur adipiscing elit,
                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+        },
+    ],
+    updates: [
+        {
+            title: 'Join The Ground Breaking Presale!',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud',
+            action: 'See Details'
+        },
+        {
+            title: 'Watch Latest Keynote To Learn More',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud',
+            action: 'Learn More'
+        },
+    ],
+    governor: [
+        'introduction', 'conceptGovernance', 'decentralized', 'UAXGovernance', 'chainGovernance'
+    ],
+    involve: [
+        {
+            content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+            list: ['formal', 'informal']
+        },
+        {
+            content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+            list: ['DAO', 'utility']
+        },
+        {
+            content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+            list: ['beacon']
         },
     ]
 }

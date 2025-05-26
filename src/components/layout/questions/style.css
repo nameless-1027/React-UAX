@@ -1,0 +1,19 @@
+.questions .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    background-color: #86019d;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.questions p {
+    color: var(--text-color);
+    margin-top: 20px;
+}
+
+.questions .icons::before {
+    transform: rotate(-45deg);
+}

@@ -58,6 +58,15 @@ nav li {
   cursor: pointer;
 }
 
+ul.question {
+  list-style: disc;
+  padding-left: 28px;
+}
+
+ul.question li::marker {
+  color: #ce20ea;
+}
+
 button.btn {
   border: none;
   background: #D90EFA;
@@ -172,6 +181,10 @@ h1 {
   font-weight: 600;
   line-height: 1.2;
   color: var(--text-color);
+}
+
+h1.small {
+  font-size: 32px;
 }
 
 h5 {

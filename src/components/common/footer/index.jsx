@@ -57,7 +57,7 @@ export const Footer = () => {
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="#">About Us</Link></li>
                                     <li><Link to="/innovative">Technology</Link></li>
-                                    <li><Link to="#">Run-a-node</Link></li>
+                                    <li><Link to="/runnode">Run-a-node</Link></li>
                                     <li><Link to="/metrices">Metrices</Link></li>
                                 </ul>
                             </div>
@@ -73,10 +73,11 @@ export const Footer = () => {
                         </div>
                         <div className=' miniMoblie:px-0 px-[28px]'>
                             <ul className='pt-[20px]'>
-                                <li><Link to="#">Governance</Link></li>
+                                <li><Link to="/governance">Governance</Link></li>
                                 <li><Link to="#">DAO’s</Link></li>
                                 <li><Link to="#">Staking</Link></li>
                                 <li><Link to="#">Whitepaper</Link></li>
+                                <li><Link to="/future">Future</Link></li>
                             </ul>
                         </div>
                         <div className='flex flex-col miniMoblie:px-0 px-[28px]'>

@@ -11,6 +11,9 @@ import { Portal } from './pages/portal';
 import { Podcasts } from './pages/podcasts';
 import { Innovative } from './pages/innovative';
 import { PressKit } from './pages/pressKit';
+import { RunNode } from './pages/runNode';
+import { Future } from './pages/future';
+import { Governor } from './pages/governor';
 
 import ScrollToTopButton from './components/common/scrollTop';
 import Theme from './components/common/theme';
@@ -31,6 +34,9 @@ function App() {
           <Route path="/podcasts" element={<Podcasts />} />
           <Route path="/innovative" element={<Innovative />} />
           <Route path="/presskit" element={<PressKit />} />
+          <Route path="/runnode" element={<RunNode />} />
+          <Route path="/future" element={<Future />} />
+          <Route path="/governance" element={<Governor />} />
         </Routes>
         <Theme />
         <ScrollToTopButton />
