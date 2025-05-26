@@ -14,6 +14,7 @@ import { PressKit } from './pages/pressKit';
 import { RunNode } from './pages/runNode';
 import { Future } from './pages/future';
 import { Governor } from './pages/governor';
+import { DAO } from './pages/DAO';
 
 import ScrollToTopButton from './components/common/scrollTop';
 import Theme from './components/common/theme';
@@ -37,6 +38,7 @@ function App() {
           <Route path="/runnode" element={<RunNode />} />
           <Route path="/future" element={<Future />} />
           <Route path="/governance" element={<Governor />} />
+          <Route path="/DAO" element={<DAO />} />
         </Routes>
         <Theme />
         <ScrollToTopButton />

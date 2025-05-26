@@ -16,7 +16,7 @@ export const Questions = ({ state }) => {
                             <></>
                     }
                     {
-                        !!questions[state].ques ? <h1 className='lg:text-[28x] text-[22px] font-normal'>
+                        !!questions[state].ques ? <h1 className='lg:text-[28px] text-[22px] font-normal'>
                             {questions[state]['ques']}
                         </h1> :
                             <></>

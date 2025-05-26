@@ -74,7 +74,7 @@ export const Footer = () => {
                         <div className=' miniMoblie:px-0 px-[28px]'>
                             <ul className='pt-[20px]'>
                                 <li><Link to="/governance">Governance</Link></li>
-                                <li><Link to="#">DAO’s</Link></li>
+                                <li><Link to="/DAO">DAO’s</Link></li>
                                 <li><Link to="#">Staking</Link></li>
                                 <li><Link to="#">Whitepaper</Link></li>
                                 <li><Link to="/future">Future</Link></li>

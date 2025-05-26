@@ -182,4 +182,136 @@ export const questions = {
             click: ''
         }
     },
+    conceptDAO: {
+        ques: 'What are DAOs?',
+        ans:
+            <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+    },
+    needDAO: {
+        ques: 'Why do we need DAOs?',
+        ans:
+            <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            </p>
+    },
+    DAOExample: {
+        ques: 'DAO Examples',
+        ans:
+            <>
+                <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                </p>
+                <ul className="question">
+                    <li>
+                        <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                            <span className="text-[#CE1FEA]">A Charity: </span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                    </li>
+                    <li>
+                        <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                            <span className="text-[#CE1FEA]">Collective ownership: </span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                    </li>
+                    <li>
+                        <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                            <span className="text-[#CE1FEA]">Ventures and grants: </span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                    </li>
+                </ul>
+            </>,
+    },
+    workDAO: {
+        ques: 'How do DAOs Work?',
+        ans:
+            <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            </p>
+    },
+    DAOGovernance: {
+        ques: 'DAO Governance',
+        ans:
+            <>
+                <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                </p>
+                <ul className="question">
+                    <li>
+                        <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                            <span className="text-[#CE1FEA]">Delegation: </span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                    </li>
+                    <li>
+                        <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                            <span className="text-[#CE1FEA]">Automatic transaction governance: </span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                    </li>
+                    <li>
+                        <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                            <span className="text-[#CE1FEA]">Multisig governance: </span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                    </li>
+                </ul>
+            </>,
+    },
+    DAOMembership: {
+        ques: 'DAO Membership',
+        ans:
+            <>
+                <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                </p>
+                <ul className="question">
+                    <li>
+                        <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                            <span className="text-[#CE1FEA]">Token-based membership: </span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                    </li>
+                    <li>
+                        <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                            <span className="text-[#CE1FEA]">Share-based membership: </span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                    </li>
+                    <li>
+                        <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                            <span className="text-[#CE1FEA]">Reputation-based membership: </span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                    </li>
+                </ul>
+            </>,
+    },
+    joinDAO: {
+        ques: 'Join / start a DAO',
+        ans:
+            <div className="flex flex-col">
+                <a href="#" className="download font-light my-[8px] w-max">UAX community DAOs</a>
+                <a href="#" className="download font-light my-[8px] w-max">DAOHaus’s list of DAOs</a>
+            </div>,
+    },
+    startDAO: {
+        ques: 'Start a DAO',
+        ans:
+            <div className="flex flex-col">
+                <a href="#" className="download font-light my-[8px] w-max">Summon a DAO</a>
+                <a href="#" className="download font-light my-[8px] w-max">Start a Governor DAO</a>
+                <a href="#" className="download font-light my-[8px] w-max">Start a Colony</a>
+            </div>,
+    },
 }

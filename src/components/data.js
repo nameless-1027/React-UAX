@@ -432,6 +432,16 @@ export const datas = {
                 </h1>,
             content: 'How to participate in UAX Governance'
         },
+        {
+            title:
+                <h1 className="text-center text-[50px] font-semibold mb-4">
+                    <span className="text-[#9B07B3]">DAO's </span>
+                    - Decentralized
+                    <span className="text-[#CE1FEA]"> Autonomous</span><br />
+                    Organizations
+                </h1>,
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elite'
+        },
     ],
     times: [
         {
@@ -735,5 +745,16 @@ export const datas = {
                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
             list: ['beacon']
         },
-    ]
+    ],
+    DAO:
+        [
+            'conceptDAO',
+            'needDAO',
+            'DAOExample',
+            'workDAO',
+            'DAOGovernance',
+            'DAOMembership',
+            'joinDAO',
+            'startDAO'
+        ]
 }
