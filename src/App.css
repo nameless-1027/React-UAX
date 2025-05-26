@@ -18,6 +18,8 @@
 
   --whatIsBack: url(./assets/media/whatIs/what-is-back-light.png);
   --box-image: transparent;
+
+  --noLightColor: transparent;
 }
 
 [data-theme='dark'] {
@@ -40,6 +42,8 @@
 
   --whatIsBack: url(./assets/media/whatIs/what-is-back-dark.png);
   --box-image: linear-gradient(to right, #1e1e1e, #000000b9);
+
+  --noLightColor: #fff;
 }
 
 * {

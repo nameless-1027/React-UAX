@@ -314,4 +314,37 @@ export const questions = {
                 <a href="#" className="download font-light my-[8px] w-max">Start a Colony</a>
             </div>,
     },
+    conceptStaking: {
+        ques: 'What is Staking?',
+        ans:
+            <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+    },
+    whyETH: {
+        ques: 'Why stake your ETH?',
+        ans:
+            <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            </p>
+    },
+    howETH: {
+        ques: 'How to stake your ETH',
+        ans:
+            <p className='font-extralight mb-0 mx-0 lg:text-[16px] text-[12px]'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            </p>
+    },
+    further: {
+        ques: 'Further reading',
+        ans:
+            <div className="flex flex-col">
+                <a href="#" className="download font-light my-[8px] w-max">UAX community staking</a>
+                <a href="#" className="download font-light my-[8px] w-max">DAOHaus’s list of staking</a>
+            </div>,
+    }
 }

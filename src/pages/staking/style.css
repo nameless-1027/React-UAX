@@ -1,0 +1,12 @@
+.staking .box>div {
+    padding: 16px 29px 13px;
+    min-width: 292px;
+}
+
+.staking .box {
+    padding: 14px;
+}
+
+.staking p {
+    line-height: 1;
+}

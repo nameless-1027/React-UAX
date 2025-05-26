@@ -1,0 +1,14 @@
+.staking-box .image {
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    background: var(--noLightColor);
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.staking-box .box {
+    background: var(--menu-color);
+    border-radius: 12px;
+    padding: 46px 56px 0;
+}

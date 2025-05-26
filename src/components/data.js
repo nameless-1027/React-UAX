@@ -1,6 +1,3 @@
-import { steps } from "framer-motion";
-import { title } from "framer-motion/client";
-
 export const datas = {
     sectionTitle1: [
         {
@@ -756,5 +753,41 @@ export const datas = {
             'DAOMembership',
             'joinDAO',
             'startDAO'
-        ]
+        ],
+    staking: [
+        {
+            title: 'Total UAX Staked',
+            content: '10,098,896'
+        },
+        {
+            title: 'Total Validators',
+            content: '10,098,896'
+        },
+        {
+            title: 'Current APR',
+            content: '2.1%'
+        },
+    ],
+    stakingOverview: ['conceptStaking', 'whyETH', 'howETH'],
+    stakingBox: [
+        {
+            title: 'Home Staking',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ',
+            action: 'More on home staking'
+        },
+        {
+            title: 'Staking as a service',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ',
+            action: 'More on staking as a service'
+        },
+        {
+            title: 'Pooled staking',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ',
+            action: 'More on pooled staking'
+        },
+        {
+            title: 'Centralized exchanges',
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ',
+        },
+    ]
 }

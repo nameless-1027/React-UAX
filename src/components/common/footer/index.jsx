@@ -75,7 +75,7 @@ export const Footer = () => {
                             <ul className='pt-[20px]'>
                                 <li><Link to="/governance">Governance</Link></li>
                                 <li><Link to="/DAO">DAO’s</Link></li>
-                                <li><Link to="#">Staking</Link></li>
+                                <li><Link to="/staking">Staking</Link></li>
                                 <li><Link to="#">Whitepaper</Link></li>
                                 <li><Link to="/future">Future</Link></li>
                             </ul>

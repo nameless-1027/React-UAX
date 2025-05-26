@@ -15,6 +15,7 @@ import { RunNode } from './pages/runNode';
 import { Future } from './pages/future';
 import { Governor } from './pages/governor';
 import { DAO } from './pages/DAO';
+import { Staking } from './pages/staking';
 
 import ScrollToTopButton from './components/common/scrollTop';
 import Theme from './components/common/theme';
@@ -39,6 +40,7 @@ function App() {
           <Route path="/future" element={<Future />} />
           <Route path="/governance" element={<Governor />} />
           <Route path="/DAO" element={<DAO />} />
+          <Route path="/staking" element={<Staking />} />
         </Routes>
         <Theme />
         <ScrollToTopButton />

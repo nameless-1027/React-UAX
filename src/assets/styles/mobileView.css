@@ -238,10 +238,26 @@
         font-size: 32px !important;
         margin-bottom: 0 !important;
     }
+
+    .staking-box .box {
+        padding: 22px 26px;
+    }
 }
 
 /* Mobile */
 @media screen and (max-width: 480px) {
+
+    a.btn {
+        padding: 8px 14px;
+    }
+    a.btn span {
+        font-size: 14px;
+    }
+
+    .questions .icons {
+        margin-left: 6px;
+    }
+
     .globe .box {
         width: 100%;
         margin: 8px 0;
