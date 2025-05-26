@@ -883,5 +883,32 @@ export const datas = {
                 'entire',
             ]
         }
+    ],
+    header: [
+        {
+            image: 'explore',
+            title: 'Explore',
+            content : 'Learn about UAX'
+        },
+        {
+            image: 'usecases',
+            title: 'Usecases',
+            content : 'Some content here'
+        },
+        {
+            image: 'tokenomics',
+            title: 'Tokenomics',
+            content : 'Some content here'
+        },
+        {
+            image: 'roadmap',
+            title: 'Roadmap',
+            content : 'Some content here'
+        },
+        {
+            image: 'wallet',
+            title: 'Wallet',
+            content : 'Some content here'
+        },
     ]
 }

@@ -361,6 +361,47 @@ header .icon-arrow#active {
   transform: rotate(180deg);
 }
 
+header .dropdown>div {
+  cursor: auto;
+  box-shadow: 0 0 4px var(--box-border-color);
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  transform: translate(-40%, -6%);
+  width: 100%;
+  min-width: 608px;
+  padding: 39px 32px;
+  background: var(--menu-color);
+  border-radius: 16px;
+}
+
+
+header .dropdown>div::after,
+header .dropdown>div::before {
+  content: '';
+  border-width: 0 12px 12px;
+  border-color: transparent transparent var(--menu-color) transparent;
+  border-style: solid;
+  width: 24px;
+  height: 12px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -99%);
+}
+
+header .dropdown>div::before {
+  width: 26px;
+  height: 13px;
+  border-width: 0 13px 13px;
+  border-color: transparent transparent var(--box-border-color) transparent;
+}
+
+header .dropdown>div .box {
+  cursor: pointer;
+  margin-top: 12px;
+}
+
 .footer {
   background-color: var(--menu-color);
   border-radius: 20px;

@@ -2,6 +2,8 @@ import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../../context/themeContext';
 
+import { datas } from '../../data';
+
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const Header = () => {
@@ -9,6 +11,7 @@ export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isMobileEcosystemOpen, setIsMobileEcosystemOpen] = useState(false);
+
 
     const { theme } = useContext(ThemeContext);
 
@@ -32,9 +35,9 @@ export const Header = () => {
                                 >
                                     Ecosystem
                                     <i className='fa-solid fa-chevron-down size-[14px] absolute right-[-24px] top-[34px]' />
-                                    <AnimatePresence>
+                                    {/* <AnimatePresence>
                                         {isOpen && (
-                                            <motion.ul className='absolute top-full left-0 sub-menu fade-up'
+                                            <motion.ul className='absolute top-full left-0 sub-menu fade-up dropdown'
                                                 initial={{ opacity: 0, y: 20 }}
                                                 animate={{ opacity: 1, y: 0 }}
                                                 exit={{ opacity: 0, y: 20 }}
@@ -76,6 +79,34 @@ export const Header = () => {
                                                     )}
                                                 </AnimatePresence>
                                             </motion.ul>
+                                        )}
+                                    </AnimatePresence> */}
+                                    <AnimatePresence>
+                                        {isOpen && (
+                                            <motion.div className='absolute top-full left-0 fade-up dropdown'
+                                                initial={{ opacity: 0, y: 20 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, y: 20 }}
+                                                transition={{ duration: 0.4 }}
+                                            >
+                                                <div className='flex flex-col'>
+                                                    <p className='text-[12px] font-extralight m-0'>Learn more about uax</p>
+                                                    <div className="flex flex-wrap boxes">
+                                                        {
+                                                            datas.header.map((_itm, _idx) => (
+                                                                <div className="w-1/2 flex items-start box">
+                                                                    <img src={`media/icons/${_itm.image}.png`} alt={_itm.image} className='mr-6' />
+                                                                    <div className="flex flex-col">
+                                                                        <h4 className='text-[16px] leading-normal font-normal'>{_itm.title}</h4>
+                                                                        <p className='my-0 text-[14px] font-light leading-normal'>{_itm.content}</p>
+                                                                    </div>
+                                                                </div>
+                                                            ))
+                                                        }
+                                                    </div>
+                                                </div>
+
+                                            </motion.div>
                                         )}
                                     </AnimatePresence>
                                 </li>
