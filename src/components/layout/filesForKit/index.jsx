@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import { ThemeContext } from '../../../context/themeContext';
 
 import { SectionTitle2 } from '../../common/sectionTitle2';
 import { datas } from '../../data';
@@ -6,6 +8,8 @@ import { datas } from '../../data';
 import './style.css';
 
 export const FilesForKit = () => {
+    const { theme } = useContext(ThemeContext);
+
     return (
         <div className='w-full'>
             <div className='container mx-auto xl:px-[80px] xl:py-[45px] lg:px-[40px] lg:py-[24px] px-[16px] py-[12px]'>
@@ -24,7 +28,7 @@ export const FilesForKit = () => {
                                             </div>
                                             <div className='flex flex-col items-start main'>
                                                 <div className="w-full flex justify-center items-end h-[55px] mb-[5px]">
-                                                    <img src={`media/${_itm.img}`} className={`w-[${_idx === 1 ? '66' : '130'}px]`} alt="logo" />
+                                                    <img src={`media/${theme === 'dark' ? _itm.imgDark : _itm.imgLight}`} className={`w-[${_idx === 1 ? '66' : '130'}px] h-full`} alt="logo" />
                                                 </div>
                                                 <h6 className='my-[17px] text-[18px]'>{`The ${_itm.type}`}</h6>
                                                 <div className="size">{`${_itm.size} KB`}</div>

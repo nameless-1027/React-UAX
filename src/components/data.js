@@ -741,7 +741,8 @@ export const datas = {
     ],
     kit: [
         {
-            img: 'logo/dark.png',
+            imgDark: 'logo/dark.png',
+            imgLight: 'logo/light.png',
             formater: 'SVG',
             type: 'LOGO',
             size: '144',
@@ -749,7 +750,8 @@ export const datas = {
                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
         },
         {
-            img: 'uax favicon.png',
+            imgDark: 'uax favicon.png',
+            imgLight: 'uax favicon.png',
             formater: 'SVG',
             type: 'UAX Symbol',
             size: '212',
@@ -757,7 +759,8 @@ export const datas = {
                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
         },
         {
-            img: 'logo/dark.png',
+            imgDark: 'logo/dark.png',
+            imgLight: 'logo/light.png',
             formater: 'PNG',
             type: 'LOGO',
             size: '144',

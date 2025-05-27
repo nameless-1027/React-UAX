@@ -15,7 +15,7 @@ export const RunNode = () => {
             <Questions state={'typeNode'} />
             <Questions state={'helpNode'} />
             <div className='container mx-auto xl:px-[80px] xl:py-[32px] lg:px-[40px] lg:py-[24px] px-[16px] py-[12px]'>
-                <div className='xl:px-[56px] px-[16px] flex flex-wrap justify-between'>
+                <div className='px-[16px] flex flex-wrap justify-between'>
                     <p className='leading-tight font-extralight text-[15px]'>
                         <i>DISCLAIMER: The information provided herein is for informational purposes only and does not constitute financial advice.
                             We do not recommend that any crypto assets be bought, sold, swapped, staked, or held by you. We make no warranties or representations about the third parties linked in this page, the information contained on their websites, the assets available through them, or the suitability, privacy or security of their products or services.

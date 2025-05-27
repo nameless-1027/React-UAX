@@ -11,4 +11,5 @@
     background: var(--menu-color);
     border-radius: 12px;
     padding: 46px 56px 0;
+    border: 1px solid var(--box-border-color);
 }
