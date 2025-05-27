@@ -28,7 +28,7 @@ export const FilesForKit = () => {
                                             </div>
                                             <div className='flex flex-col items-start main'>
                                                 <div className="w-full flex justify-center items-end h-[55px] mb-[5px]">
-                                                    <img src={`media/${theme === 'dark' ? _itm.imgDark : _itm.imgLight}`} className={`w-[${_idx === 1 ? '66' : '130'}px] h-full`} alt="logo" />
+                                                    <img src={`media/${theme === 'dark' ? _itm.imgDark : _itm.imgLight}`} className={`${_idx === 1 ? 'w-[66px]' : 'w-[130px]'}`} alt="logo" />
                                                 </div>
                                                 <h6 className='my-[17px] text-[18px]'>{`The ${_itm.type}`}</h6>
                                                 <div className="size">{`${_itm.size} KB`}</div>
